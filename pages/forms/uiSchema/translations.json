@@ -1,0 +1,25 @@
+{
+  "ui:rootFieldId": "translationsForm",
+  "common": {
+    "placeholder": {
+      "classNames": "row",
+      "english": {
+        "classNames": "col-4"
+      },
+      "dutch": {
+        "classNames": "col-4"
+      },
+      "spanish": {
+        "classNames": "col-4"
+      }
+    }
+  },
+  "ui:submitButtonOptions": {
+    "props": {
+      "disabled": true,
+      "className": "btn-frank"
+    },
+    "norender": false,
+    "submitText": "Submit Translations"
+  }
+}

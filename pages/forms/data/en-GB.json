@@ -1,0 +1,999 @@
+{
+	"common": {
+		"uppercase": "{{value, uppercase}}",
+		"capitalize": "{{value, capitalize}}",
+		"lowercase": "{{value, lowercase}}",
+		"datePickerDateFormat": "d M Y",
+		"dateFormat": "DD MMM YYYY",
+		"timestampFormat": "DD MMM YYYY HH:mm:ss",
+		"placeholder": "Search...",
+		"selectPlaceholder": "Select...",
+		"contentIsOptional": "optional",
+		"contentIsOptionalUi2": "[optional]",
+		"questionHelpExpandUi2": "Help answering this question",
+		"selfEditInfo": "If you will change the email address, saving it will log you out of the application and you will have to re-login",
+		"helpWikiLink": "https://hellios.com/help/help-for-suppliers.html",
+		"invalidSession": {
+			"errorTitle": "Invalid Session",
+			"errorMessage": "Your session is invalid, please login again.",
+			"buttonText": "LOGIN"
+		},
+		"invalidURL": {
+			"errorTitle": "Invalid URL",
+			"errorMessage": "This page is no longer available or the URL is incorrect.",
+			"errorDetails": "Please contact Hellios on [{{phone}}|tel:{{phone}}] or email [{{email}}|mailto:{{email}}] for support.",
+			"errorMultiDetails": "Please contact Hellios on <br/> {{contactNL}} <br/>{{contactES}}",
+			"buttonText": "GO TO HOME PAGE"
+		},
+		"invalidDocument": {
+			"errorMessage": "This document has expired. Please upload a new document"
+		},
+		"serverError": {
+			"errorTitle": "Server Error",
+			"errorMessage": "There is a problem loading this page, please try again in a few minutes.",
+			"errorDetails": "If the problem persists please contact Hellios on [{{phone}}|tel:{{phone}}] or email [{{email}}|mailto:{{email}}]",
+			"errorMultiDetails": "If the problem persists please contact Hellios on <br/> {{contactNL}} <br/>{{contactES}}",
+			"buttonText": "TRY AGAIN"
+		},
+		"apiError": {
+			"errorTitle": "API Error",
+			"errorDetails": "Please contact Hellios on [{{phone}}|tel:{{phone}}] or email [{{email}}|mailto:{{email}}]",
+			"errorMultiDetails": "Please contact Hellios on <br/> {{contactNL}} <br/>{{contactES}}",
+			"buttonText": "TRY AGAIN"
+		},
+		"globalServerError": "An error occured while trying to load data from the Server. Please refresh the application!",
+		"logout": "Log Out",
+		"languages": {
+			"dropdownTitle": "Change language",
+			"english": "English",
+			"dutch": "Dutch",
+			"spanish": "Spanish"
+		},
+		"changeCommunity": "Change Community",
+		"validationFeedback": {
+			"comments": {
+				"title": "Validation Feedback Comments",
+				"subtitle": {
+					"preEmphasis": "Please update and then re-submit your",
+					"emphasis": "Questionnaire",
+					"postEmphasis": "so we can publish your information"
+				}
+			},
+			"expiredDocuments": {
+				"title": "Documents that require your attention",
+				"expiredPromptText": "This document has expired. Please upload a new document",
+				"subtitle": {
+					"preEmphasis": "Please update",
+					"emphasis": "these documents",
+					"postEmphasis": "so we can publish your information"
+				}
+			},
+			"showDetails": "Show Details",
+			"hideDetails": "Hide Details"
+		}
+	},
+	"sidebarTooltips": {
+		"dashboardToolTip": "Home",
+		"userManagementToolTip": "User Management",
+		"stageOneToolTip": "Stage 1",
+		"stageTwoToolTip": "Stage 2",
+		"profileTooltip": "My Profile",
+		"questionnaire": "Questionnaire",
+		"greeting": "Hello",
+		"documents": "Documents",
+		"logout": "Log Out",
+		"help": "Help"
+	},
+	"navbarTooltips": {
+		"menuToolTip": "Menu",
+		"dashboardToolTip": "Home",
+		"stageOneToolTip": "Stage 1",
+		"stageTwoToolTip": "Stage 2",
+		"documents": "Documents",
+		"questionnaire": "Questionnaire",
+		"profileTooltip": "My Profile",
+		"userManagementToolTip": "Users"
+	},
+	"controls": {
+		"toggle": {
+			"noLabel": "No",
+			"yesLabel": "Yes"
+		}
+	},
+	"questionnaire": {
+		"amountToPay": "Amount to pay: ",
+		"title": "Questionnaire",
+		"progressTitle": "Progress",
+		"dashboard": "Dashboard",
+		"multiSelectNoOptions": "No more options",
+		"stageSubmitSaveInProgress": "There are some answers that have not been saved yet. Please check their status and try to submit again!",
+		"yesNoAnswerSelectYes": "Yes",
+		"yesNoAnswerSelectNo": "No",
+		"stageSubmitModalTitle": "Declaration",
+		"stageSubmitModalCheckboxLabel": "I confirm that the information provided is accurate at the time of submission.",
+		"stageSubmitModalCheckboxLabelUi2": "By submitting this questionnaire, you are confirming that to the best of your knowledge and belief, the details provided are correct.",
+		"stageSubmitModalNameLabel": "Name",
+		"stageSubmitModalDateLabel": "Date",
+		"updateConfirmationModalContent": "Are you sure you want to change your published questionnaire? Any changes will have to be re-submitted to validation to get published",
+		"cancelButtonModal": "CANCEL",
+		"submitButtonModal": "SUBMIT",
+		"paymentTitle": "Submit questionnaire?",
+		"paymentTitleUi2": "Please complete Stage 2",
+		"paymentBodyWithMoreStages": "Before submitting Stage 2, you need to pay the administration fee. Would you like to pay now or pay later?",
+		"paymentBodyWithMoreStagesUi2": "Would you like to pay now or pay later?",
+		"stage1Submit": "Thank you for submitting Stage 1, please now Submit Stage 2 for our team to validate your information",
+		"stage1SubmitUi2": "Thank you for submitting Stage 1, please now complete Stage 2 and submit for our team to validate your information.",
+		"paymentBody": "You are about to submit your questionnaire to Hellios. You need to pay the administration fee. Would you like to pay now or later?",
+		"paymentBodyUi2": "Would you like to pay now or pay later?",
+		"paymentAmount": "{{sign}}{{fee}}",
+		"vat": "plus {{salesTaxName}}",
+		"payLater": "PAY LATER",
+		"payOffline": "PAY OFFLINE",
+		"payNow": "PAY NOW",
+		"paymentConfirmationTitle": "Payment confirmation",
+		"paymentConfirmationBody": "Please contact Hellios if you want to pay offline or go back to your dashboard if you want to proceed with online payment.",
+		"proceed": "PROCEED",
+		"comment": "comment",
+		"stage": "Stage",
+		"multipleComments": "comments",
+		"statusSubmitted": "Submitted",
+		"statusApproved": "Validated",
+		"statusPublished": "Published",
+		"submitReconciliation": {
+			"changedQuestionsSingle": "Please note the questionnaire has been updated since you last logged in, please check question {{changedQuestions}} and update your response if required. ",
+			"changedQuestionsPlural": "Please note the questionnaire has been updated since you last logged in, please check questions {{changedQuestions}} and update your responses if required.",
+			"questionnaireChanged": "Please note the questionnaire has been updated since you last logged in, please check all the questions and update your responses if required."
+		},
+		"stageDescription": {
+			"standardSubmissionTitle": "Complete every question then submit",
+			"standardSubmission": "Complete every section below and then click on Submit. Your answers will be validated and if approved, published to the community.",
+			"questionaireInValidation": "Thank you for submitting your questionnaire which Hellios will now validate. Once validated we will either publish the questionnaire or contact you if any clarifications are required.",
+			"submitApplication": "Please select each section to complete the questions presented, some of which will be dynamically created based on your answers.  Once all sections have been completed, please select \"{{submit}}\"",
+			"nextStage": "Please select each section to complete the questions presented, some of which will be dynamically created based on your answers.  Once all sections have been completed, please select \"{{nextStage}}\"",
+			"previousStageInProgress": "Please select each section to complete the questions presented, some of which will be dynamically created based on your answers.  Once all sections have been completed, please select \"{{previousStageInProgress}}\"",
+			"paymentRequired": "Please complete payment in order to submit your questionnaire to Hellios",
+			"update": "If you wish to update your questionnaire please select  \"{{update}}\" button. When you have completed your updates please select \"{{submit}}\" in order for Hellios to validate and publish your changes.",
+			"renewal": "You are required to renew your questionnaire. Please select \"{{renewal}}\" to update your previously submitted questionnaire. When you have completed your updates please select \"{{submit}}\" in order for Hellios to validate and publish your changes. You must ensure the renewal is completed before your renewal date."
+		},
+		"upload": {
+			"uploadButton": "UPLOAD",
+			"uploadButtonUi2": "Upload",
+			"deleteModalContent": "Are you sure you want to remove \"{{documentName}}\"? Question will remain unanswered.",
+			"scanFile": "Document being scanned to ensure it is safe...",
+			"uploadFile": "Document uploading...",
+			"validation": {
+				"largeFileSize": "The size of the \"{{documentName}}\" file exceeds the {{documentSize}} accepted size!",
+				"wrongFileType": "Wrong file type! The \"{{documentName}}\" file is not a {{documentType}}!"
+			},
+			"invalidDocument": "Document name is not valid"
+		},
+		"taxonomy": {
+			"itemsSelectedSingular": "{{itemsLength}} item selected",
+			"itemsSelectedPlural": "{{itemsLength}} items selected",
+			"removeAll": "Remove All",
+			"noData": "No Data To Display",
+			"error": "Could not retrieve the answer from the Server. Please try again later!"
+		},
+		"repeater": {
+			"deleteSection": "Delete section",
+			"deleteSectionModal": "Are you sure you want to delete this section?"
+		},
+		"stageSubmitHelpText": {
+			"disabled": {
+				"sectionsRequired": "Before submitting, every section must be complete.",
+				"unansweredMandatoryQuestions": "Answer all mandatory questions and then submit your application",
+				"inValidation": "Questionnaire submitted, with Hellios for validation.",
+				"paymentRequired": "You need to finish the payment process so that your questionnaire is sent to validation"
+			},
+			"enabled": {
+				"submitApplication": "You are now ready to submit your application",
+				"previousStageInProgress": "Please submit previous stage first",
+				"nextStage": "All mandatory questions answered, you can proceed to next stage"
+			}
+		},
+		"stageSubmitButtonText": {
+			"submit": "SUBMIT",
+			"update": "UPDATE",
+			"renewal": "START RENEWAL",
+			"previousStageInProgress": "PREVIOUS STAGE",
+			"nextStage": "NEXT STAGE"
+		},
+		"nextSection": "NEXT",
+		"stageFooter": {
+			"continueLabel": "Continue",
+			"continueDescription": "Next Section",
+			"backLabel": "Back",
+			"backDescription": "Previous Section",
+			"returnLabel": "Go Back to",
+			"returnDescription": "Questionnaire view all Sections",
+			"returnToDocumentsDescription": "Documents Summary page"
+		},
+		"overviewNextSteps": {
+			"None": {
+				"title": "Questionnaire submitted",
+				"description": "Thank you for submitting your questionnaire which Hellios will now validate. Once validated we will either publish the questionnaire or contact you if any clarifications are required.",
+				"buttonLabel": "Submitted",
+				"buttonSubText": "Questionnaire submitted, with Hellios for validation."
+			},
+			"StartStage1": {
+				"title": "Complete every section then Proceed",
+				"description": "Complete every section below and then click “Proceed”. We will then advise you if any further action is required.",
+				"buttonLabel": "Proceed",
+				"buttonSubText": "Before you click Proceed, every section must be complete."
+			},
+			"ContinueStage1": {
+				"title": "Complete every section then Proceed",
+				"description": "Complete every section below and then click “Proceed”. We will then advise you if any further action is required.",
+				"buttonLabel": "Proceed",
+				"buttonSubText": "Before you click Proceed, every section must be complete."
+			},
+			"SubmitStage1": {
+				"title": "Complete every section then Proceed",
+				"description": "Complete every section below and then click “Proceed”. We will then advise you if any further action is required.",
+				"buttonLabel": "Proceed",
+				"buttonSubText": "You are now ready to click proceed."
+			},
+			"StartStage2": {
+				"title": "Complete every section then Submit",
+				"description": "Complete every section below and then click on “Submit”. Your answers will be validated and if approved, published to the community.",
+				"buttonLabel": "Submit",
+				"buttonSubText": "Before submitting, every section must be complete."
+			},
+			"ContinueStage2": {
+				"title": "Complete every section and submit",
+				"description": "Complete every section below and then click on “Submit”. Your answers will be validated and if approved, published to the community.",
+				"buttonLabel": "Submit",
+				"buttonSubText": "Before submitting, every section must be complete."
+			},
+			"SubmitStage2": {
+				"title": "Complete every section and submit",
+				"description": "Complete every section below and then click on “Submit”. Your answers will be validated and if approved, published to the community.",
+				"buttonLabel": "Submit",
+				"buttonSubText": "You are now ready to submit your application."
+			},
+			"ReviewStage1": {
+				"title": "Review feedback and re-submit",
+				"description": "Once you have addressed all feedback, submit your questionnaire again for the Hellios Validations Team to review.",
+				"buttonLabel": "Submit",
+				"buttonSubText": ""
+			},
+			"ReviewStage2": {
+				"title": "Review feedback and re-submit",
+				"description": "Once you have addressed all feedback, submit your questionnaire again for the Hellios Validations Team to review.",
+				"buttonLabel": "Submit",
+				"buttonSubText": ""
+			},
+			"StartUpdate": {
+				"title": "Update your answers",
+				"description": "Click “Start Update” to make changes to your questionnaire. Any updates you make to your questionnaire will NOT be visible to buyers until your changes have been validated and published by the Hellios Validations team.",
+				"buttonLabel": "Start Update",
+				"buttonSubText": ""
+			},
+			"StartRenewal": {
+				"title": "Renew your questionnaire",
+				"description": "Click “Start Renewal” to begin the renewal process. Confirm every section below is up to date and then click on “Submit”. Your answers will be validated and if approved, published to the community.",
+				"buttonLabel": "Start Renewal",
+				"buttonSubText": ""
+			},
+			"PayNow": {
+				"title": "Click Pay Now",
+				"description": "Before we can validate your answers and publish your questionnaire to the community, please click “Pay Now” to make your payment.",
+				"buttonLabel": "Pay Now",
+				"buttonSubText": ""
+			},
+			"SubmitStage1AfterFeedback": {
+				"title": "Review feedback and Submit",
+				"description": "Once you have addressed all feedback, submit your questionnaire for the Hellios Validations Team to review.",
+				"buttonLabel": "Proceed",
+				"buttonSubText": ""
+			},
+			"SubmitStage2AfterFeedback": {
+				"title": "Review feedback and Submit",
+				"description": "Once you have addressed all feedback, submit your questionnaire for the Hellios Validations Team to review.",
+				"buttonLabel": "Submit",
+				"buttonSubText": ""
+			},
+			"NotAllowedDocumentUpdateStarted": {
+				"title": "Please complete your Document update",
+				"description": "You have started a document update. To update your expired documents, please click [here|/documents]. You can start your questionnaire update once your document update is complete.",
+				"buttonLabel": "",
+				"buttonSubText": ""
+			}
+		}
+	},
+
+	"modals": {
+		"error": {
+			"header": "Error while trying to perform the operation!",
+			"closeButton": "CLOSE"
+		},
+		"confirmation": {
+			"title": "Confirmation",
+			"noButton": "NO",
+			"yesButton": "YES"
+		},
+		"confirmationUi2": {
+			"noButton": "No",
+			"yesButton": "Yes"
+		},
+		"information": {
+			"title": "Information",
+			"okButton": "OK"
+		},
+		"action": {
+			"cancel": "CANCEL",
+			"submit": "SUBMIT",
+			"error": "There was a problem while trying to perform the action. Please try again in a few minutes."
+		},
+		"actionUi2": {
+			"cancel": "Cancel",
+			"submit": "Submit",
+			"error": "There was a problem while trying to perform the action. Please try again in a few minutes."
+		},
+		"validationSent": {
+			"title": "Information",
+			"body": "Thank you for submitting your questionnaire which Hellios will now validate. Once validated we will either publish the questionnaire or contact you if any clarifications are required.",
+			"buttonConfirm": "Proceed to Dashboard"
+		},
+		"midYearNextStage": {
+			"title": "Please complete Stage 2",
+			"body": "Thank you for submitting Stage 1, please now complete Stage 2 and submit for our team to validate your information.",
+			"button": "Close"
+		},
+		"midYearSuggestion": {
+			"title": "Information",
+			"body": "Please click UPDATE to amend your answers or upload new documents",
+			"close": "Close"
+		},
+		"unsubmittedModalWarning": {
+			"header": "Warning - Changes not submitted!",
+			"messages": "You have not submitted your changes and are about to leave the page!|Do you want to continue?",
+			"cancelLabel": "Cancel",
+			"confirmLabel": "Continue"
+		}
+	},
+	"serverErrors": {
+		"internalServerError": "There was an error while trying to communicate with the Server!",
+		"refreshSessionAttempt": "Something went wrong while trying to refresh your session. Please reload the application!",
+		"busyServer": "The server is currently overloaded with requests. Please try again in a few minutes!",
+		"validationErrors": {
+			"0": "The value could not be validated!",
+			"1101": "The submitted stage does not exist in the template!",
+			"1102": "Not all required questions were answered!",
+			"1103": "Supplier not allowed to submit stage!",
+			"1104": "This question does not exist. Please refresh the page!",
+			"1105": "Cannot submit your application because a previous stage is in progress. Please refresh the page!",
+			"1106": "This stage has already been submitted. Please refresh the page!",
+			"1107": "Cannot save a question from a repeater group without the group identifier!",
+			"1109": "You have entered an invalid expiry date for the following questions, please update your answers with valid expiry dates: ",
+			"1111": "The date \"{{value}}\" is not valid. The date cannot be in the future!",
+			"1112": "The date \"{{value}}\" is not valid. The date cannot be in the past!",
+			"1113": "The number \"{{value}}\" is not valid. The number has to be an integer!",
+			"1114": "The number \"{{value}}\" is not valid. The number should be greater than {{referenceValue}}!",
+			"1115": "The number \"{{value}}\" is not valid. The number should be lower than {{referenceValue}}!",
+			"1116": "The answer \"{{value}}\" does not contain the minimum number of {{referenceValue}} characters required!",
+			"1117": "The answer \"{{value}}\" contains more than the maximum number of {{referenceValue}} characters allowed!",
+			"1118": "The answer \"{{value}}\" is not a valid website!",
+			"1119": "The answer \"{{value}}\" is not a valid email!",
+			"1120": "The number \"{{value}}\" is not valid. The number should be greater than or equal to {{referenceValue}}",
+			"1121": "Cannot provide multiple answers to a single select question!",
+			"1130": "The number \"{{value}}\" is not valid. The number should be lower than or equal to {{referenceValue}}",
+			"1132": "The year \"{{value}}\" is not valid. The year cannot be in the future!",
+			"1133": "This financial year has already been added",
+			"1140": "Cannot provide multiple answers to a date question!",
+			"1141": "The date format is invalid!",
+			"1151": "Cannot provide multiple answers to a number question!",
+			"1152": "The value provided for the answer is not a number!",
+			"1161": "Cannot provide multiple answers to a free text question!",
+			"1171": "Cannot provide multiple answers to a yes-no question!",
+			"1172": "The value provided for the answers is not valid!",
+			"1180": "Cannot perform action because the questionnaire is sent to validation!",
+			"1191": "Cannot start the payment process. Payment already received or not needed!",
+			"1201": "Incorrect document type uploaded. Please upload pdf document!",
+			"1202": "Cannot save a document with invalid name format!",
+			"1203": "Cannot save a document that exceeds the 25MB size!",
+			"1204": "Cannot save more than one document per question!",
+			"1205": "Document not found. Please refresh the application!",
+			"1206": "The document was not selected. Please select document for upload!",
+			"1207": "Cannot save a document with invalid extension!",
+			"1211": "Invalid Taxonomy value passed to the Server!",
+			"1212": "The Taxonomy value passed does not exist in this community!",
+			"1213": "Duplicated taxonomy values passed to the server!",
+			"2007": "Your questionnaire has already been completed. Please refresh the application!",
+			"2181": "Supplier does not have access to any community!",
+			"4000": "Unfortunately your deadline date was not configured.",
+			"4001": "Unfortunately your renewal date was not configured."
+		},
+		"avValidationErrors": {
+			"1000": "The document cannot be empty!",
+			"1001": "Cannot save a document that exceeds the 25MB size!",
+			"1002": "Cannot save a document with invalid name format!",
+			"1003": "Incorrect document type uploaded. Please upload pdf document!",
+			"1004": "Incorrect document type uploaded. Please upload pdf document!",
+			"2000": "The document is infected. Cannot upload it into the system!",
+			"2500": "The document is corrupted - integrity failure!",
+			"3000": "The document cannot be scanned - password protected file!"
+		}
+	},
+	"dashboard": {
+		"welcomeMessage": "Welcome {{supplierName}},",
+		"viewAll": "View all",
+		"less": "Less",
+		"communityUpdatesUi2": "Updates",
+		"statusCard": {
+			"title": "Account Overview",
+			"titleUi2": "Summary",
+			"documentsStatus": {
+				"title": "DOCUMENTS STATUS",
+				"titleUi2": "Document Status",
+				"footerTitle": "Status: ",
+				"status": {
+					"red": "Red",
+					"amber": "Amber",
+					"green": "Green",
+					"white": "None"
+				},
+				"statusUi2": {
+					"red": "Red",
+					"amber": "Amber",
+					"green": "Green",
+					"white": "None"
+				},
+				"redAndAmberDocumentStatus": "Documents that require your attention:",
+				"description": {
+					"red": "Document(s) expiry date >4 weeks old",
+					"amber": "Document(s) are due to expire soon or have expired within past 4 weeks.",
+					"green": "The uploaded documents are published and valid",
+					"white": "No documents currently published."
+				},
+				"descriptionUi2": {
+					"red": "expiry date more than 4 weeks old",
+					"amber": "document(s) are due to expire soon or have expired within past 4 weeks.",
+					"green": "all documents are published and valid",
+					"white": "no documents published"
+				},
+				"buttonText": "DOCUMENT MANAGEMENT"
+			},
+			"supplierStatus": {
+				"title": "QUESTIONNAIRE STATUS",
+				"titleUi2": "Complete Questionnaire by",
+				"footerTitleUi2": "Status: ",
+				"renewalUi2": "Your renewal date is",
+				"statusUi2": {
+					"red": "Red",
+					"amber": "Amber",
+					"green": "Green",
+					"white": "None"
+				},
+				"invited": {
+					"titleUi2": "Complete Questionnaire by",
+					"status": "Invited",
+					"description": {
+						"green": "Questionnaire not started",
+						"amber": "Questionnaire not started, deadline date pending",
+						"red": "Questionnaire not started, deadline date exceeded"
+					},
+					"descriptionUi2": {
+						"green": "not started",
+						"amber": "not started, deadline date pending",
+						"red": "not started, deadline date exceeded"
+					}
+				},
+				"invited-renewal": {
+					"titleUi2": "Renew Questionnaire by",
+					"status": "Invited Renewal",
+					"description": {
+						"green": "Renewal invite sent",
+						"amber": "Renewal invite sent, renewal date pending",
+						"red": "Renewal invite sent, renewal date exceeded"
+					},
+					"descriptionUi2": {
+						"green": "not started",
+						"amber": "not started, renewal date pending ",
+						"red": "not started, renewal date exceeded"
+					}
+				},
+				"in-progress": {
+					"titleUi2": "Complete Questionnaire by",
+					"status": "In Progress",
+					"description": {
+						"green": "Questionnaire in progress",
+						"amber": "Questionnaire in progress, deadline date pending",
+						"red": "Questionnaire in progress, deadline date exceeded"
+					},
+					"descriptionUi2": {
+						"green": "in progress",
+						"amber": "in progress, deadline date pending",
+						"red": "in progress, deadline date exceeded"
+					}
+				},
+				"in-progress-renewal": {
+					"titleUi2": "Renew Questionnaire by",
+					"status": "In Progress Renewal",
+					"statusUi2": "in progress renewal",
+					"description": {
+						"green": "Renewal in progress",
+						"amber": "Renewal in progress, renewal date pending",
+						"red": "Renewal in progress, renewal date exceeded"
+					},
+					"descriptionUi2": {
+						"green": "in progress",
+						"amber": "in progress, renewal date pending",
+						"red": "in progress, renewal date exceeded"
+					}
+				},
+				"in-validation": {
+					"titleUi2": "Complete Questionnaire by",
+					"status": "In Validation",
+					"description": {
+						"white": "Questionnaire submitted, with Hellios for validation",
+						"green": "Questionnaire submitted, with supplier for clarifications",
+						"amber": "Questionnaire submitted, with supplier for clarifications, deadline date pending",
+						"red": "Questionnaire submitted, with supplier for clarifications, deadline date exceeded"
+					},
+					"descriptionUi2": {
+						"white": "with Hellios for validation",
+						"green": "with supplier for clarifications",
+						"amber": "with supplier for clarifications, deadline date pending",
+						"red": "with supplier for clarifications, deadline date exceeded"
+					}
+				},
+				"update-in-validation": {
+					"titleUi2": "Update in Validation",
+					"status": "Update in Validation",
+					"description": {
+						"white": "Questionnaire complete, update submitted",
+						"green": "Questionnaire complete, update submitted, with supplier for clarifications"
+					},
+					"descriptionUi2": {
+						"white": "update submitted",
+						"green": "with supplier for clarifications"
+					}
+				},
+				"document-update-in-validation": {
+					"titleUi2": "Document update in Validation",
+					"status": "Document update in Validation",
+					"description": {
+						"white": "Questionnaire complete, update submitted",
+						"green": "Questionnaire complete, update submitted, with supplier for clarifications"
+					},
+					"descriptionUi2": {
+						"white": "document update submitted",
+						"green": "with supplier for clarifications"
+					}
+				},
+				"in-validation-renewal": {
+					"titleUi2": "Renew Questionnaire by",
+					"status": "Renewal in Validation",
+					"description": {
+						"white": "Renewal questionnaire submitted, with Hellios for validation",
+						"green": "Renewal questionnaire submitted, with supplier for clarifications",
+						"amber": "Renewal questionnaire submitted, with supplier for clarifications, renewal date pending",
+						"red": "Renewal questionnaire submitted, with supplier for clarifications, renewal date exceeded"
+					},
+					"descriptionUi2": {
+						"white": "with Hellios for validation",
+						"green": "with supplier for clarifications",
+						"amber": "with supplier for clarifications, renewal date pending",
+						"red": "with supplier for clarifications, renewal date exceeded"
+					}
+				},
+				"complete": {
+					"titleUi2": "Questionnaire completed",
+					"status": "Complete",
+					"description": {
+						"green": "Questionnaire complete"
+					},
+					"descriptionUi2": {
+						"green": "complete"
+					}
+				},
+				"buttonText": "GO TO QUESTIONNAIRE",
+				"singleCommentMessage": "You have {{commentCount}} comment.",
+				"multipleCommentsMessage": "You have {{commentCount}} comments."
+			},
+			"paymentStatus": {
+				"title": "PAYMENT STATUS",
+				"titleUi2": "Payments Due",
+				"status": {
+					"waiting-for-payment": "Awaiting Payment",
+					"paid": "Paid"
+				},
+				"description": {
+					"waiting-for-payment": "Payment is needed to send the questionnaire to validation",
+					"paid": "Payment has been received",
+					"payNow": "PAY NOW",
+					"payNowUi2": "Pay now",
+					"paymentAmount": "Amount to pay {{sign}}{{fee}}",
+					"paymentAmountUi2": "{{sign}}{{fee}}",
+					"vat": "plus {{salesTaxName}}"
+				},
+				"modal": {
+					"confirmation": "Please confirm that you want to make the payment.",
+					"confirmationUi2": "Please confirm to proceed to payment."
+				}
+			},
+			"deadlineStatus": {
+				"title": "COMPLETION DEADLINE DATE",
+				"description": {
+					"status-complete": "Questionnaire is now published and buyers can access it. No deadline date pending.",
+					"status-not-complete": "Questionnaire completion deadline date is:"
+				}
+			},
+			"renewal-deadlineStatus": {
+				"title": "RENEWAL DEADLINE DATE",
+				"description": {
+					"status-complete": "Questionnaire is now published and buyers can access it. No deadline date pending.",
+					"status-not-complete": "Questionnaire renewal deadline date is:"
+				}
+			}
+		},
+		"overallStatus": {
+			"title": "OVERALL STATUS IS",
+			"status": {
+				"red": "Red",
+				"amber": "Amber",
+				"green": "Green",
+				"white": "In Validation",
+				"update-in-validation": "Update in Validation",
+				"renewal-in-validation": "Renewal in Validation"
+			}
+		},
+		"stageSummaryTable": {
+			"shortId": "ID",
+			"sectionName": "SECTION",
+			"mandatoryQuestions": "# of MANDATORY QUESTIONS",
+			"progress": "PROGRESS",
+			"sectionStatus": "SECTION STATUS",
+			"comments": "# of COMMENTS",
+			"sectionStatusType": {
+				"notStarted": "Not Started",
+				"inProgress": "In Progress",
+				"completed": "Completed"
+			},
+			"sectionStatusTooltip": "This status is for mandatory questions only"
+		},
+		"documentsManagement": {
+			"noData": "No Documents.",
+			"noDataUi2": {
+				"title": "No Documents Available",
+				"text": "There are no documents available to show you right now, please complete the Questionnaire",
+				"textCompleted": "There are no documents available to show you right now."
+			},
+			"title": "Your Documents",
+			"titleUi2": "Documents",
+			"documentName": "DOCUMENT",
+			"status": "STATUS",
+			"expiryDate": "EXPIRY DATE",
+			"download": "DOWNLOAD",
+			"dateTextValid": "This document expires on",
+			"dateTextExpired": "This document expired on",
+			"documentsStatusType": {
+				"ok": "OK",
+				"expired": "Expired",
+				"expiredDue": "Due to Expire or Expired",
+				"expiredRed": "Expired - Red",
+				"expiredAmber": "Expired - Amber",
+				"pending": "Pending"
+			},
+			"documentsStatusUi2": {
+				"statusSubmitted": "Submitted",
+				"statusApproved": "Validated",
+				"statusPublished": "Published",
+				"multipleComments": "comments"
+			},
+			"shortQuestionId": "QUESTION",
+			"documentsStatusTooltipExpiredAmber": "This document is due to expire or has expired, please update as soon as possible.",
+			"documentsStatusTooltipExpiredRed": "This document expired more than 4 weeks ago and must be updated.",
+			"previous": "Previous:",
+			"uploaded": "Uploaded:",
+			"overviewNextSteps": {
+				"StartDocumentUpdate": {
+					"title": "Ensure your documents are up to date",
+					"description": "Update any expired documents and submit them, so we can publish your latest information.",
+					"buttonLabel": "Start Update",
+					"buttonSubText": ""
+				},
+				"SubmitDocumentUpdate": {
+					"title": "Ensure your documents are up to date",
+					"description": "Upload any expired documents and submit them, so we can publish your latest information.",
+					"buttonLabel": "Submit",
+					"buttonSubText": "Before submitting, every section must be complete."
+				},
+				"HelliosValidatingDocumentUpdate": {
+					"title": "Document Update Submitted",
+					"description": "Thank you for submitting your document update which Hellios will now validate. Once validated, we will either publish your documents or contact you if any clarifications are required.",
+					"buttonLabel": "Submit",
+					"buttonSubText": "Documents submitted, with Hellios for validation."
+				},
+				"SupplierValidatingDocumentUpdate": {
+					"title": "Review feedback and Submit",
+					"description": "Once you have addressed all feedback, submit your document update for the Hellios Validations Team to review.",
+					"buttonLabel": "Submit",
+					"buttonSubText": ""
+				},
+				"NotAllowedRenewalStarted": {
+					"title": "Please complete your Renewal",
+					"description": "Your questionnaire renewal has now started. If you need to update any documents please click [here|/questionnaire]. You can update your documents as part of your renewal.",
+					"buttonLabel": "",
+					"buttonSubText": ""
+				},
+				"NotAllowedInvitedRenewal": {
+					"title": "Please complete your Renewal",
+					"description": "Please click [here|/questionnaire] to start your renewal. If you need to update any documents, you can do this as part of your renewal process.",
+					"buttonLabel": "",
+					"buttonSubText": ""
+				},
+				"NotAllowedQuestionnaireUpdateStarted": {
+					"title": "Please complete your Questionnaire update",
+					"description": "You have started a questionnaire update. To update your documents, please click [here|/questionnaire] to access your editable questionnaire. You can update your documents as part of your questionnaire update.",
+					"buttonLabel": "",
+					"buttonSubText": ""
+				},
+				"NotAllowedQuestionnaireUpdateInValidation": {
+					"title": "Please complete your Questionnaire update",
+					"description": "You cannot start your document update until your questionnaire update is complete. Please click [here|/questionnaire] to access your questionnaire update.",
+					"buttonLabel": "",
+					"buttonSubText": ""
+				}
+			},
+			"updateDocumentsConfirmationModalContent": "Are you sure you want to change your published documents? Any changes will have to be re-submitted to validation to get published",
+			"submitDocumentUpdateModal": {
+				"title": "Submit Document(s)",
+				"subTitle": "You are about to submit any changes you have made to Hellios",
+				"contentTitle": "Warning not all expired documents have been updated",
+				"contentSubTitle": "You can still submit if you prefer."
+			}
+		}
+	},
+	"countDownClock": {
+		"title": "in",
+		"days": "Days",
+		"hours": "Hrs",
+		"minutes": "Min",
+		"seconds": "Sec"
+	},
+	"helpBanner": {
+		"title": "New to {{communityNameUpperCase}}?",
+		"text": {
+			"textBefore": "The",
+			"textLink": "User Guide",
+			"textAfter": "includes video tutorials and explanations of each feature, to help you get the most out of {{communityNameUpperCase}} in no time."
+		},
+		"icon": "Help Icon"
+	},
+	"progressBanner": {
+		"title": "Progress",
+		"description": {
+			"stage": "You are at: ",
+			"recommendation": "We recommend you next: "
+		},
+		"stage": {
+			"none": "Nominated",
+			"invited": "Logged-in",
+			"stage1": "Stage 1",
+			"stage2": "Stage 2",
+			"lastStage": "Up-to-date",
+			"complete": "Complete"
+		},
+		"action": {
+			"questionnaire": "Complete outstanding Questionnaire",
+			"review": "Review Feedback and update Questionnaire",
+			"renew": "Renew Questionnaire",
+			"documents": "Update Documents"
+		}
+	},
+	"payment": {
+		"billing": {
+			"title": "Billing Information",
+			"contactTitle": "Billing Contact",
+			"surname": "Surname",
+			"firstName": "First name",
+			"addressTitle": "Billing Address",
+			"addressDescription": "Address where the card is registered",
+			"address1": "Address Line 1",
+			"address2": "Address Line 2",
+			"city": "Town/City",
+			"postCode": "Postcode",
+			"country": "Country",
+			"state": "State",
+			"phone": "Phone",
+			"link": "NEXT",
+			"paymentNotRequired": "Payment is not required or it was already done."
+		},
+		"error": {
+			"title": "Sorry, your transaction could not be processed!",
+			"description": "There has been an error during the transaction. Please try again ",
+			"linkPayHere": "here",
+			"differentPayment": " or choose a different payment method.",
+			"link": "BACK TO DASHBOARD",
+			"maxLength": "The \"{{fieldTitle}}\" should be at most {{length}} characters long."
+		},
+		"success": {
+			"title": "Thank you!",
+			"description": "You have successfully paid your administration fee.",
+			"questionnaireInfo": "You can continue to your questionnaire",
+			"dashboardLink": "BACK TO DASHBOARD",
+			"questionnaireLink": "BACK TO QUESTIONNAIRE"
+		}
+	},
+	"profile": {
+		"logo": {
+			"title": "Upload your company logo",
+			"description": "Add your company logo here to brand your profile.",
+			"requirements": "Your logo must be:",
+			"descriptionReq1": "A JPEG or PNG file",
+			"descriptionReq2": "No more than 1mb",
+			"upload": "Upload logo",
+			"remove": "Remove logo",
+			"close": "Close",
+			"save": "Save",
+			"errorSize": "File is too large, maximum file size is 1mb.",
+			"errorFormat": "Accepted Image formats: JPEG or PNG."
+		},
+		"page": {
+			"title": "My Account",
+			"titleUi2": "My Profile",
+			"save": "SAVE",
+			"saveUi2": "Save",
+			"cancel": "Cancel"
+		},
+		"contentIsOptional": "optional",
+		"contentIsOptionalUi2": "[optional]",
+		"personalInfoTitle": "Personal Information",
+		"personalInfoTitleUi2": "Personal information",
+		"contactInfoTitle": "Contact Information",
+		"contactInfoTitleUi2": "Contact information",
+		"contact": {
+			"firstName": {
+				"label": "First Name"
+			},
+			"lastName": {
+				"label": "Last Name"
+			},
+			"jobTitle": {
+				"label": "Job Title"
+			},
+			"emailAddress": {
+				"label": "Email Address",
+				"error": "Email Address is invalid!"
+			},
+			"phoneWork": {
+				"label": "Telephone Number"
+			},
+			"phoneMobile": {
+				"label": "Mobile Number"
+			}
+		},
+		"contactUi2": {
+			"firstName": {
+				"label": "First name"
+			},
+			"lastName": {
+				"label": "Last name"
+			},
+			"jobTitle": {
+				"label": "Job title"
+			},
+			"emailAddress": {
+				"label": "Email address",
+				"error": "Email address is invalid!"
+			},
+			"phoneWork": {
+				"label": "Telephone number"
+			},
+			"phoneMobile": {
+				"label": "Mobile number"
+			}
+		}
+	},
+	"user-management": {
+		"title": "{{accountName}} Users",
+		"titleUi2": "Users",
+		"description": "Add, remove and manage users.",
+		"buyersLink": "Buyers",
+		"suppliersLink": "Suppliers",
+		"add-label": "ADD USER",
+		"addLabelUi2": "Add User",
+		"add-confirmation-title": "Add User Confirmation",
+		"edit-confirmation-title": "Edit confirmation",
+		"delete-confirmation-title": "Delete confirmation",
+		"add-confirmation": "The user has been added to your organisation. It may take up to 2 minutes for the account to be created / activated.",
+		"edit-confirmation": "The user was successfully edited",
+		"delete-confirmation": "The user was successfully marked as Inactive",
+		"lose-rights-confirmation": "Are you sure you want to make {{userName}} Admin? You will lose your admin rights and you will be logged out if you proceed",
+		"modal": {
+			"add-title": "Add user",
+			"add-button-label": "ADD",
+			"edit-title": "Edit user",
+			"edit-button-label": "SAVE",
+			"delete-title": "Make user Inactive",
+			"delete-content": "Are you sure you want to remove {{userName}}? Please contact Hellios if you wish to re-activate them.",
+			"delete-button-label": "SUBMIT"
+		},
+		"modalUi2": {
+			"add-title": "Add user",
+			"add-button-label": "Add User",
+			"edit-title": "Edit user",
+			"edit-button-label": "Save",
+			"delete-title": "Confirm Delete User",
+			"delete-content": "You are about to delete this user",
+			"delete-button-label": "Delete User",
+			"warning": "Warning this cannot be undone"
+		},
+		"roles": {
+			"standard": "Standard",
+			"admin": "Admin"
+		},
+		"contact": {
+			"firstName": {
+				"label": "First Name"
+			},
+			"lastName": {
+				"label": "Last Name"
+			},
+			"jobTitle": {
+				"label": "Job Title"
+			},
+			"emailAddress": {
+				"label": "Email Address",
+				"error": "Email Address is invalid or exists!"
+			},
+			"phoneWork": {
+				"label": "Telephone Number"
+			},
+			"phoneMobile": {
+				"label": "Mobile Number"
+			},
+			"admin": {
+				"label": "Admin",
+				"description": "Please select if you would like this to be the new admin user"
+			}
+		},
+		"contactUi2": {
+			"firstName": {
+				"label": "First name"
+			},
+			"lastName": {
+				"label": "Last name"
+			},
+			"jobTitle": {
+				"label": "Job title"
+			},
+			"emailAddress": {
+				"label": "Email address",
+				"error": "Email address is invalid or exists!"
+			},
+			"phoneWork": {
+				"label": "Telephone number"
+			},
+			"phoneMobile": {
+				"label": "Mobile number"
+			},
+			"admin": {
+				"label": "Administrator",
+				"description": "Select only if you would like this to be the new Admin User."
+			}
+		},
+		"contact-table": {
+			"firstName": "FIRST NAME",
+			"lastName": "LAST NAME",
+			"email": "E-MAIL",
+			"jobTitle": "JOB TITLE",
+			"role": "ROLES"
+		},
+		"contact-tableUi2": {
+			"firstName": "First name",
+			"lastName": "Last name",
+			"email": "Email",
+			"jobTitle": "Job title",
+			"role": "Role",
+			"edit": "Edit",
+			"delete": "Delete"
+		}
+	},
+	"passwordChange": {
+		"message": "Your password has expired. You must update your password in order to log in to your account. Click \"Yes\" if you want to change it now and \"No\" if you want to change it at another time. Thanks.",
+		"fallback": "Your password has expired. You must update your password in order to log in to your account. Unfortunately we were unable to get password change link for you. Please click \"Don't remember your password?\" on the login page and follow the instructions. Thanks."
+	}
+}

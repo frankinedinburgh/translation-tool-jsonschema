@@ -1,0 +1,3682 @@
+{
+  "definitions": {
+    "Translations": {
+      "type": "object",
+      "properties": {
+        "english": {
+          "type": "string"
+        },
+        "dutch": {
+          "type": "string"
+        },
+        "spanish": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "type": "object",
+  "properties": {
+    "common": {
+      "type": "object",
+      "properties": {
+        "placeholder": {
+          "$ref": "#/definitions/Translations"
+        },
+        "selectPlaceholder": {
+          "$ref": "#/definitions/Translations"
+        },
+        "contentIsOptional": {
+          "$ref": "#/definitions/Translations"
+        },
+        "contentIsOptionalUi2": {
+          "$ref": "#/definitions/Translations"
+        },
+        "questionHelpExpandUi2": {
+          "$ref": "#/definitions/Translations"
+        },
+        "selfEditInfo": {
+          "$ref": "#/definitions/Translations"
+        },
+        "helpWikiLink": {
+          "$ref": "#/definitions/Translations"
+        },
+        "invalidSession": {
+          "type": "object",
+          "properties": {
+            "errorTitle": {
+              "$ref": "#/definitions/Translations"
+            },
+            "errorMessage": {
+              "$ref": "#/definitions/Translations"
+            },
+            "buttonText": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": ["errorTitle", "errorMessage", "buttonText"]
+        },
+        "invalidURL": {
+          "type": "object",
+          "properties": {
+            "errorTitle": {
+              "$ref": "#/definitions/Translations"
+            },
+            "errorMessage": {
+              "$ref": "#/definitions/Translations"
+            },
+            "errorDetails": {
+              "$ref": "#/definitions/Translations"
+            },
+            "errorMultiDetails": {
+              "$ref": "#/definitions/Translations"
+            },
+            "buttonText": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": [
+            "errorTitle",
+            "errorMessage",
+            "errorDetails",
+            "errorMultiDetails",
+            "buttonText"
+          ]
+        },
+        "invalidDocument": {
+          "type": "object",
+          "properties": {
+            "errorMessage": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": ["errorMessage"]
+        },
+        "serverError": {
+          "type": "object",
+          "properties": {
+            "errorTitle": {
+              "$ref": "#/definitions/Translations"
+            },
+            "errorMessage": {
+              "$ref": "#/definitions/Translations"
+            },
+            "errorDetails": {
+              "$ref": "#/definitions/Translations"
+            },
+            "errorMultiDetails": {
+              "$ref": "#/definitions/Translations"
+            },
+            "buttonText": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": [
+            "errorTitle",
+            "errorMessage",
+            "errorDetails",
+            "errorMultiDetails",
+            "buttonText"
+          ]
+        },
+        "apiError": {
+          "type": "object",
+          "properties": {
+            "errorTitle": {
+              "$ref": "#/definitions/Translations"
+            },
+            "errorDetails": {
+              "$ref": "#/definitions/Translations"
+            },
+            "errorMultiDetails": {
+              "$ref": "#/definitions/Translations"
+            },
+            "buttonText": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": [
+            "errorTitle",
+            "errorDetails",
+            "errorMultiDetails",
+            "buttonText"
+          ]
+        },
+        "globalServerError": {
+          "$ref": "#/definitions/Translations"
+        },
+        "logout": {
+          "$ref": "#/definitions/Translations"
+        },
+        "languages": {
+          "type": "object",
+          "properties": {
+            "dropdownTitle": {
+              "$ref": "#/definitions/Translations"
+            },
+            "english": {
+              "$ref": "#/definitions/Translations"
+            },
+            "dutch": {
+              "$ref": "#/definitions/Translations"
+            },
+            "spanish": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": ["dropdownTitle", "english", "dutch", "spanish"]
+        },
+        "changeCommunity": {
+          "$ref": "#/definitions/Translations"
+        },
+        "validationFeedback": {
+          "type": "object",
+          "properties": {
+            "comments": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "subtitle": {
+                  "type": "object",
+                  "properties": {
+                    "preEmphasis": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "emphasis": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "postEmphasis": {
+                      "$ref": "#/definitions/Translations"
+                    }
+                  },
+                  "required": ["preEmphasis", "emphasis", "postEmphasis"]
+                }
+              },
+              "required": ["title", "subtitle"]
+            },
+            "expiredDocuments": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "expiredPromptText": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "subtitle": {
+                  "type": "object",
+                  "properties": {
+                    "preEmphasis": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "emphasis": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "postEmphasis": {
+                      "$ref": "#/definitions/Translations"
+                    }
+                  },
+                  "required": ["preEmphasis", "emphasis", "postEmphasis"]
+                }
+              },
+              "required": ["title", "expiredPromptText", "subtitle"]
+            },
+            "showDetails": {
+              "$ref": "#/definitions/Translations"
+            },
+            "hideDetails": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": [
+            "comments",
+            "expiredDocuments",
+            "showDetails",
+            "hideDetails"
+          ]
+        }
+      },
+      "required": [
+        "uppercase",
+        "capitalize",
+        "lowercase",
+        "datePickerDateFormat",
+        "dateFormat",
+        "timestampFormat",
+        "placeholder",
+        "selectPlaceholder",
+        "contentIsOptional",
+        "contentIsOptionalUi2",
+        "questionHelpExpandUi2",
+        "selfEditInfo",
+        "helpWikiLink",
+        "invalidSession",
+        "invalidURL",
+        "invalidDocument",
+        "serverError",
+        "apiError",
+        "globalServerError",
+        "logout",
+        "languages",
+        "changeCommunity",
+        "validationFeedback"
+      ]
+    },
+    "sidebarTooltips": {
+      "type": "object",
+      "properties": {
+        "dashboardToolTip": {
+          "$ref": "#/definitions/Translations"
+        },
+        "userManagementToolTip": {
+          "$ref": "#/definitions/Translations"
+        },
+        "stageOneToolTip": {
+          "$ref": "#/definitions/Translations"
+        },
+        "stageTwoToolTip": {
+          "$ref": "#/definitions/Translations"
+        },
+        "profileTooltip": {
+          "$ref": "#/definitions/Translations"
+        },
+        "questionnaire": {
+          "$ref": "#/definitions/Translations"
+        },
+        "greeting": {
+          "$ref": "#/definitions/Translations"
+        },
+        "documents": {
+          "$ref": "#/definitions/Translations"
+        },
+        "logout": {
+          "$ref": "#/definitions/Translations"
+        },
+        "help": {
+          "$ref": "#/definitions/Translations"
+        }
+      },
+      "required": [
+        "dashboardToolTip",
+        "userManagementToolTip",
+        "stageOneToolTip",
+        "stageTwoToolTip",
+        "profileTooltip",
+        "questionnaire",
+        "greeting",
+        "documents",
+        "logout",
+        "help"
+      ]
+    },
+    "navbarTooltips": {
+      "type": "object",
+      "properties": {
+        "menuToolTip": {
+          "$ref": "#/definitions/Translations"
+        },
+        "dashboardToolTip": {
+          "$ref": "#/definitions/Translations"
+        },
+        "stageOneToolTip": {
+          "$ref": "#/definitions/Translations"
+        },
+        "stageTwoToolTip": {
+          "$ref": "#/definitions/Translations"
+        },
+        "documents": {
+          "$ref": "#/definitions/Translations"
+        },
+        "questionnaire": {
+          "$ref": "#/definitions/Translations"
+        },
+        "profileTooltip": {
+          "$ref": "#/definitions/Translations"
+        },
+        "userManagementToolTip": {
+          "$ref": "#/definitions/Translations"
+        }
+      },
+      "required": [
+        "menuToolTip",
+        "dashboardToolTip",
+        "stageOneToolTip",
+        "stageTwoToolTip",
+        "documents",
+        "questionnaire",
+        "profileTooltip",
+        "userManagementToolTip"
+      ]
+    },
+    "controls": {
+      "type": "object",
+      "properties": {
+        "toggle": {
+          "type": "object",
+          "properties": {
+            "noLabel": {
+              "$ref": "#/definitions/Translations"
+            },
+            "yesLabel": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": ["noLabel", "yesLabel"]
+        }
+      },
+      "required": ["toggle"]
+    },
+    "questionnaire": {
+      "type": "object",
+      "properties": {
+        "amountToPay": {
+          "$ref": "#/definitions/Translations"
+        },
+        "title": {
+          "$ref": "#/definitions/Translations"
+        },
+        "progressTitle": {
+          "$ref": "#/definitions/Translations"
+        },
+        "dashboard": {
+          "$ref": "#/definitions/Translations"
+        },
+        "multiSelectNoOptions": {
+          "$ref": "#/definitions/Translations"
+        },
+        "stageSubmitSaveInProgress": {
+          "$ref": "#/definitions/Translations"
+        },
+        "yesNoAnswerSelectYes": {
+          "$ref": "#/definitions/Translations"
+        },
+        "yesNoAnswerSelectNo": {
+          "$ref": "#/definitions/Translations"
+        },
+        "stageSubmitModalTitle": {
+          "$ref": "#/definitions/Translations"
+        },
+        "stageSubmitModalCheckboxLabel": {
+          "$ref": "#/definitions/Translations"
+        },
+        "stageSubmitModalCheckboxLabelUi2": {
+          "$ref": "#/definitions/Translations"
+        },
+        "stageSubmitModalNameLabel": {
+          "$ref": "#/definitions/Translations"
+        },
+        "stageSubmitModalDateLabel": {
+          "$ref": "#/definitions/Translations"
+        },
+        "updateConfirmationModalContent": {
+          "$ref": "#/definitions/Translations"
+        },
+        "cancelButtonModal": {
+          "$ref": "#/definitions/Translations"
+        },
+        "submitButtonModal": {
+          "$ref": "#/definitions/Translations"
+        },
+        "paymentTitle": {
+          "$ref": "#/definitions/Translations"
+        },
+        "paymentTitleUi2": {
+          "$ref": "#/definitions/Translations"
+        },
+        "paymentBodyWithMoreStages": {
+          "$ref": "#/definitions/Translations"
+        },
+        "paymentBodyWithMoreStagesUi2": {
+          "$ref": "#/definitions/Translations"
+        },
+        "stage1Submit": {
+          "$ref": "#/definitions/Translations"
+        },
+        "stage1SubmitUi2": {
+          "$ref": "#/definitions/Translations"
+        },
+        "paymentBody": {
+          "$ref": "#/definitions/Translations"
+        },
+        "paymentBodyUi2": {
+          "$ref": "#/definitions/Translations"
+        },
+        "paymentAmount": {
+          "$ref": "#/definitions/Translations"
+        },
+        "vat": {
+          "$ref": "#/definitions/Translations"
+        },
+        "payLater": {
+          "$ref": "#/definitions/Translations"
+        },
+        "payOffline": {
+          "$ref": "#/definitions/Translations"
+        },
+        "payNow": {
+          "$ref": "#/definitions/Translations"
+        },
+        "paymentConfirmationTitle": {
+          "$ref": "#/definitions/Translations"
+        },
+        "paymentConfirmationBody": {
+          "$ref": "#/definitions/Translations"
+        },
+        "proceed": {
+          "$ref": "#/definitions/Translations"
+        },
+        "comment": {
+          "$ref": "#/definitions/Translations"
+        },
+        "stage": {
+          "$ref": "#/definitions/Translations"
+        },
+        "multipleComments": {
+          "$ref": "#/definitions/Translations"
+        },
+        "statusSubmitted": {
+          "$ref": "#/definitions/Translations"
+        },
+        "statusApproved": {
+          "$ref": "#/definitions/Translations"
+        },
+        "statusPublished": {
+          "$ref": "#/definitions/Translations"
+        },
+        "submitReconciliation": {
+          "type": "object",
+          "properties": {
+            "changedQuestionsSingle": {
+              "$ref": "#/definitions/Translations"
+            },
+            "changedQuestionsPlural": {
+              "$ref": "#/definitions/Translations"
+            },
+            "questionnaireChanged": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": [
+            "changedQuestionsSingle",
+            "changedQuestionsPlural",
+            "questionnaireChanged"
+          ]
+        },
+        "stageDescription": {
+          "type": "object",
+          "properties": {
+            "standardSubmissionTitle": {
+              "$ref": "#/definitions/Translations"
+            },
+            "standardSubmission": {
+              "$ref": "#/definitions/Translations"
+            },
+            "questionaireInValidation": {
+              "$ref": "#/definitions/Translations"
+            },
+            "submitApplication": {
+              "$ref": "#/definitions/Translations"
+            },
+            "nextStage": {
+              "$ref": "#/definitions/Translations"
+            },
+            "previousStageInProgress": {
+              "$ref": "#/definitions/Translations"
+            },
+            "paymentRequired": {
+              "$ref": "#/definitions/Translations"
+            },
+            "update": {
+              "$ref": "#/definitions/Translations"
+            },
+            "renewal": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": [
+            "standardSubmissionTitle",
+            "standardSubmission",
+            "questionaireInValidation",
+            "submitApplication",
+            "nextStage",
+            "previousStageInProgress",
+            "paymentRequired",
+            "update",
+            "renewal"
+          ]
+        },
+        "upload": {
+          "type": "object",
+          "properties": {
+            "uploadButton": {
+              "$ref": "#/definitions/Translations"
+            },
+            "uploadButtonUi2": {
+              "$ref": "#/definitions/Translations"
+            },
+            "deleteModalContent": {
+              "$ref": "#/definitions/Translations"
+            },
+            "scanFile": {
+              "$ref": "#/definitions/Translations"
+            },
+            "uploadFile": {
+              "$ref": "#/definitions/Translations"
+            },
+            "validation": {
+              "type": "object",
+              "properties": {
+                "largeFileSize": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "wrongFileType": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["largeFileSize", "wrongFileType"]
+            },
+            "invalidDocument": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": [
+            "uploadButton",
+            "uploadButtonUi2",
+            "deleteModalContent",
+            "scanFile",
+            "uploadFile",
+            "validation",
+            "invalidDocument"
+          ]
+        },
+        "taxonomy": {
+          "type": "object",
+          "properties": {
+            "itemsSelectedSingular": {
+              "$ref": "#/definitions/Translations"
+            },
+            "itemsSelectedPlural": {
+              "$ref": "#/definitions/Translations"
+            },
+            "removeAll": {
+              "$ref": "#/definitions/Translations"
+            },
+            "noData": {
+              "$ref": "#/definitions/Translations"
+            },
+            "error": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": [
+            "itemsSelectedSingular",
+            "itemsSelectedPlural",
+            "removeAll",
+            "noData",
+            "error"
+          ]
+        },
+        "repeater": {
+          "type": "object",
+          "properties": {
+            "deleteSection": {
+              "$ref": "#/definitions/Translations"
+            },
+            "deleteSectionModal": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": ["deleteSection", "deleteSectionModal"]
+        },
+        "stageSubmitHelpText": {
+          "type": "object",
+          "properties": {
+            "disabled": {
+              "type": "object",
+              "properties": {
+                "sectionsRequired": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "unansweredMandatoryQuestions": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "inValidation": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "paymentRequired": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": [
+                "sectionsRequired",
+                "unansweredMandatoryQuestions",
+                "inValidation",
+                "paymentRequired"
+              ]
+            },
+            "enabled": {
+              "type": "object",
+              "properties": {
+                "submitApplication": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "previousStageInProgress": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "nextStage": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": [
+                "submitApplication",
+                "previousStageInProgress",
+                "nextStage"
+              ]
+            }
+          },
+          "required": ["disabled", "enabled"]
+        },
+        "stageSubmitButtonText": {
+          "type": "object",
+          "properties": {
+            "submit": {
+              "$ref": "#/definitions/Translations"
+            },
+            "update": {
+              "$ref": "#/definitions/Translations"
+            },
+            "renewal": {
+              "$ref": "#/definitions/Translations"
+            },
+            "previousStageInProgress": {
+              "$ref": "#/definitions/Translations"
+            },
+            "nextStage": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": [
+            "submit",
+            "update",
+            "renewal",
+            "previousStageInProgress",
+            "nextStage"
+          ]
+        },
+        "nextSection": {
+          "$ref": "#/definitions/Translations"
+        },
+        "stageFooter": {
+          "type": "object",
+          "properties": {
+            "continueLabel": {
+              "$ref": "#/definitions/Translations"
+            },
+            "continueDescription": {
+              "$ref": "#/definitions/Translations"
+            },
+            "backLabel": {
+              "$ref": "#/definitions/Translations"
+            },
+            "backDescription": {
+              "$ref": "#/definitions/Translations"
+            },
+            "returnLabel": {
+              "$ref": "#/definitions/Translations"
+            },
+            "returnDescription": {
+              "$ref": "#/definitions/Translations"
+            },
+            "returnToDocumentsDescription": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": [
+            "continueLabel",
+            "continueDescription",
+            "backLabel",
+            "backDescription",
+            "returnLabel",
+            "returnDescription",
+            "returnToDocumentsDescription"
+          ]
+        },
+        "overviewNextSteps": {
+          "type": "object",
+          "properties": {
+            "None": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "description": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonLabel": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonSubText": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": [
+                "title",
+                "description",
+                "buttonLabel",
+                "buttonSubText"
+              ]
+            },
+            "StartStage1": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "description": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonLabel": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonSubText": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": [
+                "title",
+                "description",
+                "buttonLabel",
+                "buttonSubText"
+              ]
+            },
+            "ContinueStage1": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "description": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonLabel": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonSubText": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": [
+                "title",
+                "description",
+                "buttonLabel",
+                "buttonSubText"
+              ]
+            },
+            "SubmitStage1": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "description": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonLabel": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonSubText": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": [
+                "title",
+                "description",
+                "buttonLabel",
+                "buttonSubText"
+              ]
+            },
+            "StartStage2": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "description": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonLabel": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonSubText": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": [
+                "title",
+                "description",
+                "buttonLabel",
+                "buttonSubText"
+              ]
+            },
+            "ContinueStage2": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "description": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonLabel": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonSubText": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": [
+                "title",
+                "description",
+                "buttonLabel",
+                "buttonSubText"
+              ]
+            },
+            "SubmitStage2": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "description": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonLabel": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonSubText": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": [
+                "title",
+                "description",
+                "buttonLabel",
+                "buttonSubText"
+              ]
+            },
+            "ReviewStage1": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "description": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonLabel": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonSubText": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": [
+                "title",
+                "description",
+                "buttonLabel",
+                "buttonSubText"
+              ]
+            },
+            "ReviewStage2": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "description": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonLabel": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonSubText": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": [
+                "title",
+                "description",
+                "buttonLabel",
+                "buttonSubText"
+              ]
+            },
+            "StartUpdate": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "description": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonLabel": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonSubText": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": [
+                "title",
+                "description",
+                "buttonLabel",
+                "buttonSubText"
+              ]
+            },
+            "StartRenewal": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "description": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonLabel": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonSubText": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": [
+                "title",
+                "description",
+                "buttonLabel",
+                "buttonSubText"
+              ]
+            },
+            "PayNow": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "description": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonLabel": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonSubText": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": [
+                "title",
+                "description",
+                "buttonLabel",
+                "buttonSubText"
+              ]
+            },
+            "SubmitStage1AfterFeedback": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "description": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonLabel": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonSubText": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": [
+                "title",
+                "description",
+                "buttonLabel",
+                "buttonSubText"
+              ]
+            },
+            "SubmitStage2AfterFeedback": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "description": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonLabel": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonSubText": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": [
+                "title",
+                "description",
+                "buttonLabel",
+                "buttonSubText"
+              ]
+            },
+            "NotAllowedDocumentUpdateStarted": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "description": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonLabel": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "buttonSubText": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": [
+                "title",
+                "description",
+                "buttonLabel",
+                "buttonSubText"
+              ]
+            }
+          },
+          "required": [
+            "None",
+            "StartStage1",
+            "ContinueStage1",
+            "SubmitStage1",
+            "StartStage2",
+            "ContinueStage2",
+            "SubmitStage2",
+            "ReviewStage1",
+            "ReviewStage2",
+            "StartUpdate",
+            "StartRenewal",
+            "PayNow",
+            "SubmitStage1AfterFeedback",
+            "SubmitStage2AfterFeedback",
+            "NotAllowedDocumentUpdateStarted"
+          ]
+        }
+      },
+      "required": [
+        "amountToPay",
+        "title",
+        "progressTitle",
+        "dashboard",
+        "multiSelectNoOptions",
+        "stageSubmitSaveInProgress",
+        "yesNoAnswerSelectYes",
+        "yesNoAnswerSelectNo",
+        "stageSubmitModalTitle",
+        "stageSubmitModalCheckboxLabel",
+        "stageSubmitModalCheckboxLabelUi2",
+        "stageSubmitModalNameLabel",
+        "stageSubmitModalDateLabel",
+        "updateConfirmationModalContent",
+        "cancelButtonModal",
+        "submitButtonModal",
+        "paymentTitle",
+        "paymentTitleUi2",
+        "paymentBodyWithMoreStages",
+        "paymentBodyWithMoreStagesUi2",
+        "stage1Submit",
+        "stage1SubmitUi2",
+        "paymentBody",
+        "paymentBodyUi2",
+        "paymentAmount",
+        "vat",
+        "payLater",
+        "payOffline",
+        "payNow",
+        "paymentConfirmationTitle",
+        "paymentConfirmationBody",
+        "proceed",
+        "comment",
+        "stage",
+        "multipleComments",
+        "statusSubmitted",
+        "statusApproved",
+        "statusPublished",
+        "submitReconciliation",
+        "stageDescription",
+        "upload",
+        "taxonomy",
+        "repeater",
+        "stageSubmitHelpText",
+        "stageSubmitButtonText",
+        "nextSection",
+        "stageFooter",
+        "overviewNextSteps"
+      ]
+    },
+    "modals": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "object",
+          "properties": {
+            "header": {
+              "$ref": "#/definitions/Translations"
+            },
+            "closeButton": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": ["header", "closeButton"]
+        },
+        "confirmation": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "$ref": "#/definitions/Translations"
+            },
+            "noButton": {
+              "$ref": "#/definitions/Translations"
+            },
+            "yesButton": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": ["title", "noButton", "yesButton"]
+        },
+        "confirmationUi2": {
+          "type": "object",
+          "properties": {
+            "noButton": {
+              "$ref": "#/definitions/Translations"
+            },
+            "yesButton": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": ["noButton", "yesButton"]
+        },
+        "information": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "$ref": "#/definitions/Translations"
+            },
+            "okButton": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": ["title", "okButton"]
+        },
+        "action": {
+          "type": "object",
+          "properties": {
+            "cancel": {
+              "$ref": "#/definitions/Translations"
+            },
+            "submit": {
+              "$ref": "#/definitions/Translations"
+            },
+            "error": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": ["cancel", "submit", "error"]
+        },
+        "actionUi2": {
+          "type": "object",
+          "properties": {
+            "cancel": {
+              "$ref": "#/definitions/Translations"
+            },
+            "submit": {
+              "$ref": "#/definitions/Translations"
+            },
+            "error": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": ["cancel", "submit", "error"]
+        },
+        "validationSent": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "$ref": "#/definitions/Translations"
+            },
+            "body": {
+              "$ref": "#/definitions/Translations"
+            },
+            "buttonConfirm": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": ["title", "body", "buttonConfirm"]
+        },
+        "midYearNextStage": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "$ref": "#/definitions/Translations"
+            },
+            "body": {
+              "$ref": "#/definitions/Translations"
+            },
+            "button": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": ["title", "body", "button"]
+        },
+        "midYearSuggestion": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "$ref": "#/definitions/Translations"
+            },
+            "body": {
+              "$ref": "#/definitions/Translations"
+            },
+            "close": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": ["title", "body", "close"]
+        },
+        "unsubmittedModalWarning": {
+          "type": "object",
+          "properties": {
+            "header": {
+              "$ref": "#/definitions/Translations"
+            },
+            "messages": {
+              "$ref": "#/definitions/Translations"
+            },
+            "cancelLabel": {
+              "$ref": "#/definitions/Translations"
+            },
+            "confirmLabel": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": ["header", "messages", "cancelLabel", "confirmLabel"]
+        }
+      },
+      "required": [
+        "error",
+        "confirmation",
+        "confirmationUi2",
+        "information",
+        "action",
+        "actionUi2",
+        "validationSent",
+        "midYearNextStage",
+        "midYearSuggestion",
+        "unsubmittedModalWarning"
+      ]
+    },
+    "serverErrors": {
+      "type": "object",
+      "properties": {
+        "internalServerError": {
+          "$ref": "#/definitions/Translations"
+        },
+        "refreshSessionAttempt": {
+          "$ref": "#/definitions/Translations"
+        },
+        "busyServer": {
+          "$ref": "#/definitions/Translations"
+        },
+        "validationErrors": {
+          "type": "object",
+          "properties": {
+            "0": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1101": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1102": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1103": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1104": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1105": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1106": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1107": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1109": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1111": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1112": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1113": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1114": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1115": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1116": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1117": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1118": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1119": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1120": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1121": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1130": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1132": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1133": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1140": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1141": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1151": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1152": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1161": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1171": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1172": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1180": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1191": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1201": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1202": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1203": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1204": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1205": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1206": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1207": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1211": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1212": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1213": {
+              "$ref": "#/definitions/Translations"
+            },
+            "2007": {
+              "$ref": "#/definitions/Translations"
+            },
+            "2181": {
+              "$ref": "#/definitions/Translations"
+            },
+            "4000": {
+              "$ref": "#/definitions/Translations"
+            },
+            "4001": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": [
+            "0",
+            "1101",
+            "1102",
+            "1103",
+            "1104",
+            "1105",
+            "1106",
+            "1107",
+            "1109",
+            "1111",
+            "1112",
+            "1113",
+            "1114",
+            "1115",
+            "1116",
+            "1117",
+            "1118",
+            "1119",
+            "1120",
+            "1121",
+            "1130",
+            "1132",
+            "1133",
+            "1140",
+            "1141",
+            "1151",
+            "1152",
+            "1161",
+            "1171",
+            "1172",
+            "1180",
+            "1191",
+            "1201",
+            "1202",
+            "1203",
+            "1204",
+            "1205",
+            "1206",
+            "1207",
+            "1211",
+            "1212",
+            "1213",
+            "2007",
+            "2181",
+            "4000",
+            "4001"
+          ]
+        },
+        "avValidationErrors": {
+          "type": "object",
+          "properties": {
+            "1000": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1001": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1002": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1003": {
+              "$ref": "#/definitions/Translations"
+            },
+            "1004": {
+              "$ref": "#/definitions/Translations"
+            },
+            "2000": {
+              "$ref": "#/definitions/Translations"
+            },
+            "2500": {
+              "$ref": "#/definitions/Translations"
+            },
+            "3000": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": [
+            "1000",
+            "1001",
+            "1002",
+            "1003",
+            "1004",
+            "2000",
+            "2500",
+            "3000"
+          ]
+        }
+      },
+      "required": [
+        "internalServerError",
+        "refreshSessionAttempt",
+        "busyServer",
+        "validationErrors",
+        "avValidationErrors"
+      ]
+    },
+    "dashboard": {
+      "type": "object",
+      "properties": {
+        "welcomeMessage": {
+          "$ref": "#/definitions/Translations"
+        },
+        "viewAll": {
+          "$ref": "#/definitions/Translations"
+        },
+        "less": {
+          "$ref": "#/definitions/Translations"
+        },
+        "communityUpdatesUi2": {
+          "$ref": "#/definitions/Translations"
+        },
+        "statusCard": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "$ref": "#/definitions/Translations"
+            },
+            "titleUi2": {
+              "$ref": "#/definitions/Translations"
+            },
+            "documentsStatus": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "titleUi2": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "footerTitle": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "status": {
+                  "type": "object",
+                  "properties": {
+                    "red": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "amber": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "green": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "white": {
+                      "$ref": "#/definitions/Translations"
+                    }
+                  },
+                  "required": ["red", "amber", "green", "white"]
+                },
+                "statusUi2": {
+                  "type": "object",
+                  "properties": {
+                    "red": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "amber": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "green": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "white": {
+                      "$ref": "#/definitions/Translations"
+                    }
+                  },
+                  "required": ["red", "amber", "green", "white"]
+                },
+                "redAndAmberDocumentStatus": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "description": {
+                  "type": "object",
+                  "properties": {
+                    "red": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "amber": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "green": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "white": {
+                      "$ref": "#/definitions/Translations"
+                    }
+                  },
+                  "required": ["red", "amber", "green", "white"]
+                },
+                "descriptionUi2": {
+                  "type": "object",
+                  "properties": {
+                    "red": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "amber": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "green": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "white": {
+                      "$ref": "#/definitions/Translations"
+                    }
+                  },
+                  "required": ["red", "amber", "green", "white"]
+                },
+                "buttonText": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": [
+                "title",
+                "titleUi2",
+                "footerTitle",
+                "status",
+                "statusUi2",
+                "redAndAmberDocumentStatus",
+                "description",
+                "descriptionUi2",
+                "buttonText"
+              ]
+            },
+            "supplierStatus": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "titleUi2": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "footerTitleUi2": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "renewalUi2": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "statusUi2": {
+                  "type": "object",
+                  "properties": {
+                    "red": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "amber": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "green": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "white": {
+                      "$ref": "#/definitions/Translations"
+                    }
+                  },
+                  "required": ["red", "amber", "green", "white"]
+                },
+                "invited": {
+                  "type": "object",
+                  "properties": {
+                    "titleUi2": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "status": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "description": {
+                      "type": "object",
+                      "properties": {
+                        "green": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "amber": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "red": {
+                          "$ref": "#/definitions/Translations"
+                        }
+                      },
+                      "required": ["green", "amber", "red"]
+                    },
+                    "descriptionUi2": {
+                      "type": "object",
+                      "properties": {
+                        "green": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "amber": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "red": {
+                          "$ref": "#/definitions/Translations"
+                        }
+                      },
+                      "required": ["green", "amber", "red"]
+                    }
+                  },
+                  "required": [
+                    "titleUi2",
+                    "status",
+                    "description",
+                    "descriptionUi2"
+                  ]
+                },
+                "invited-renewal": {
+                  "type": "object",
+                  "properties": {
+                    "titleUi2": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "status": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "description": {
+                      "type": "object",
+                      "properties": {
+                        "green": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "amber": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "red": {
+                          "$ref": "#/definitions/Translations"
+                        }
+                      },
+                      "required": ["green", "amber", "red"]
+                    },
+                    "descriptionUi2": {
+                      "type": "object",
+                      "properties": {
+                        "green": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "amber": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "red": {
+                          "$ref": "#/definitions/Translations"
+                        }
+                      },
+                      "required": ["green", "amber", "red"]
+                    }
+                  },
+                  "required": [
+                    "titleUi2",
+                    "status",
+                    "description",
+                    "descriptionUi2"
+                  ]
+                },
+                "in-progress": {
+                  "type": "object",
+                  "properties": {
+                    "titleUi2": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "status": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "description": {
+                      "type": "object",
+                      "properties": {
+                        "green": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "amber": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "red": {
+                          "$ref": "#/definitions/Translations"
+                        }
+                      },
+                      "required": ["green", "amber", "red"]
+                    },
+                    "descriptionUi2": {
+                      "type": "object",
+                      "properties": {
+                        "green": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "amber": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "red": {
+                          "$ref": "#/definitions/Translations"
+                        }
+                      },
+                      "required": ["green", "amber", "red"]
+                    }
+                  },
+                  "required": [
+                    "titleUi2",
+                    "status",
+                    "description",
+                    "descriptionUi2"
+                  ]
+                },
+                "in-progress-renewal": {
+                  "type": "object",
+                  "properties": {
+                    "titleUi2": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "status": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "statusUi2": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "description": {
+                      "type": "object",
+                      "properties": {
+                        "green": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "amber": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "red": {
+                          "$ref": "#/definitions/Translations"
+                        }
+                      },
+                      "required": ["green", "amber", "red"]
+                    },
+                    "descriptionUi2": {
+                      "type": "object",
+                      "properties": {
+                        "green": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "amber": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "red": {
+                          "$ref": "#/definitions/Translations"
+                        }
+                      },
+                      "required": ["green", "amber", "red"]
+                    }
+                  },
+                  "required": [
+                    "titleUi2",
+                    "status",
+                    "statusUi2",
+                    "description",
+                    "descriptionUi2"
+                  ]
+                },
+                "in-validation": {
+                  "type": "object",
+                  "properties": {
+                    "titleUi2": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "status": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "description": {
+                      "type": "object",
+                      "properties": {
+                        "white": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "green": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "amber": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "red": {
+                          "$ref": "#/definitions/Translations"
+                        }
+                      },
+                      "required": ["white", "green", "amber", "red"]
+                    },
+                    "descriptionUi2": {
+                      "type": "object",
+                      "properties": {
+                        "white": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "green": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "amber": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "red": {
+                          "$ref": "#/definitions/Translations"
+                        }
+                      },
+                      "required": ["white", "green", "amber", "red"]
+                    }
+                  },
+                  "required": [
+                    "titleUi2",
+                    "status",
+                    "description",
+                    "descriptionUi2"
+                  ]
+                },
+                "update-in-validation": {
+                  "type": "object",
+                  "properties": {
+                    "titleUi2": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "status": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "description": {
+                      "type": "object",
+                      "properties": {
+                        "white": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "green": {
+                          "$ref": "#/definitions/Translations"
+                        }
+                      },
+                      "required": ["white", "green"]
+                    },
+                    "descriptionUi2": {
+                      "type": "object",
+                      "properties": {
+                        "white": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "green": {
+                          "$ref": "#/definitions/Translations"
+                        }
+                      },
+                      "required": ["white", "green"]
+                    }
+                  },
+                  "required": [
+                    "titleUi2",
+                    "status",
+                    "description",
+                    "descriptionUi2"
+                  ]
+                },
+                "document-update-in-validation": {
+                  "type": "object",
+                  "properties": {
+                    "titleUi2": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "status": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "description": {
+                      "type": "object",
+                      "properties": {
+                        "white": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "green": {
+                          "$ref": "#/definitions/Translations"
+                        }
+                      },
+                      "required": ["white", "green"]
+                    },
+                    "descriptionUi2": {
+                      "type": "object",
+                      "properties": {
+                        "white": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "green": {
+                          "$ref": "#/definitions/Translations"
+                        }
+                      },
+                      "required": ["white", "green"]
+                    }
+                  },
+                  "required": [
+                    "titleUi2",
+                    "status",
+                    "description",
+                    "descriptionUi2"
+                  ]
+                },
+                "in-validation-renewal": {
+                  "type": "object",
+                  "properties": {
+                    "titleUi2": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "status": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "description": {
+                      "type": "object",
+                      "properties": {
+                        "white": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "green": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "amber": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "red": {
+                          "$ref": "#/definitions/Translations"
+                        }
+                      },
+                      "required": ["white", "green", "amber", "red"]
+                    },
+                    "descriptionUi2": {
+                      "type": "object",
+                      "properties": {
+                        "white": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "green": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "amber": {
+                          "$ref": "#/definitions/Translations"
+                        },
+                        "red": {
+                          "$ref": "#/definitions/Translations"
+                        }
+                      },
+                      "required": ["white", "green", "amber", "red"]
+                    }
+                  },
+                  "required": [
+                    "titleUi2",
+                    "status",
+                    "description",
+                    "descriptionUi2"
+                  ]
+                },
+                "complete": {
+                  "type": "object",
+                  "properties": {
+                    "titleUi2": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "status": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "description": {
+                      "type": "object",
+                      "properties": {
+                        "green": {
+                          "$ref": "#/definitions/Translations"
+                        }
+                      },
+                      "required": ["green"]
+                    },
+                    "descriptionUi2": {
+                      "type": "object",
+                      "properties": {
+                        "green": {
+                          "$ref": "#/definitions/Translations"
+                        }
+                      },
+                      "required": ["green"]
+                    }
+                  },
+                  "required": [
+                    "titleUi2",
+                    "status",
+                    "description",
+                    "descriptionUi2"
+                  ]
+                },
+                "buttonText": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "singleCommentMessage": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "multipleCommentsMessage": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": [
+                "title",
+                "titleUi2",
+                "footerTitleUi2",
+                "renewalUi2",
+                "statusUi2",
+                "invited",
+                "invited-renewal",
+                "in-progress",
+                "in-progress-renewal",
+                "in-validation",
+                "update-in-validation",
+                "document-update-in-validation",
+                "in-validation-renewal",
+                "complete",
+                "buttonText",
+                "singleCommentMessage",
+                "multipleCommentsMessage"
+              ]
+            },
+            "paymentStatus": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "titleUi2": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "status": {
+                  "type": "object",
+                  "properties": {
+                    "waiting-for-payment": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "paid": {
+                      "$ref": "#/definitions/Translations"
+                    }
+                  },
+                  "required": ["waiting-for-payment", "paid"]
+                },
+                "description": {
+                  "type": "object",
+                  "properties": {
+                    "waiting-for-payment": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "paid": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "payNow": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "payNowUi2": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "paymentAmount": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "paymentAmountUi2": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "vat": {
+                      "$ref": "#/definitions/Translations"
+                    }
+                  },
+                  "required": [
+                    "waiting-for-payment",
+                    "paid",
+                    "payNow",
+                    "payNowUi2",
+                    "paymentAmount",
+                    "paymentAmountUi2",
+                    "vat"
+                  ]
+                },
+                "modal": {
+                  "type": "object",
+                  "properties": {
+                    "confirmation": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "confirmationUi2": {
+                      "$ref": "#/definitions/Translations"
+                    }
+                  },
+                  "required": ["confirmation", "confirmationUi2"]
+                }
+              },
+              "required": [
+                "title",
+                "titleUi2",
+                "status",
+                "description",
+                "modal"
+              ]
+            },
+            "deadlineStatus": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "description": {
+                  "type": "object",
+                  "properties": {
+                    "status-complete": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "status-not-complete": {
+                      "$ref": "#/definitions/Translations"
+                    }
+                  },
+                  "required": ["status-complete", "status-not-complete"]
+                }
+              },
+              "required": ["title", "description"]
+            },
+            "renewal-deadlineStatus": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "description": {
+                  "type": "object",
+                  "properties": {
+                    "status-complete": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "status-not-complete": {
+                      "$ref": "#/definitions/Translations"
+                    }
+                  },
+                  "required": ["status-complete", "status-not-complete"]
+                }
+              },
+              "required": ["title", "description"]
+            }
+          },
+          "required": [
+            "title",
+            "titleUi2",
+            "documentsStatus",
+            "supplierStatus",
+            "paymentStatus",
+            "deadlineStatus",
+            "renewal-deadlineStatus"
+          ]
+        },
+        "overallStatus": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "$ref": "#/definitions/Translations"
+            },
+            "status": {
+              "type": "object",
+              "properties": {
+                "red": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "amber": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "green": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "white": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "update-in-validation": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "renewal-in-validation": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": [
+                "red",
+                "amber",
+                "green",
+                "white",
+                "update-in-validation",
+                "renewal-in-validation"
+              ]
+            }
+          },
+          "required": ["title", "status"]
+        },
+        "stageSummaryTable": {
+          "type": "object",
+          "properties": {
+            "shortId": {
+              "$ref": "#/definitions/Translations"
+            },
+            "sectionName": {
+              "$ref": "#/definitions/Translations"
+            },
+            "mandatoryQuestions": {
+              "$ref": "#/definitions/Translations"
+            },
+            "progress": {
+              "$ref": "#/definitions/Translations"
+            },
+            "sectionStatus": {
+              "$ref": "#/definitions/Translations"
+            },
+            "comments": {
+              "$ref": "#/definitions/Translations"
+            },
+            "sectionStatusType": {
+              "type": "object",
+              "properties": {
+                "notStarted": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "inProgress": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "completed": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["notStarted", "inProgress", "completed"]
+            },
+            "sectionStatusTooltip": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": [
+            "shortId",
+            "sectionName",
+            "mandatoryQuestions",
+            "progress",
+            "sectionStatus",
+            "comments",
+            "sectionStatusType",
+            "sectionStatusTooltip"
+          ]
+        },
+        "documentsManagement": {
+          "type": "object",
+          "properties": {
+            "noData": {
+              "$ref": "#/definitions/Translations"
+            },
+            "noDataUi2": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "text": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "textCompleted": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["title", "text", "textCompleted"]
+            },
+            "title": {
+              "$ref": "#/definitions/Translations"
+            },
+            "titleUi2": {
+              "$ref": "#/definitions/Translations"
+            },
+            "documentName": {
+              "$ref": "#/definitions/Translations"
+            },
+            "status": {
+              "$ref": "#/definitions/Translations"
+            },
+            "expiryDate": {
+              "$ref": "#/definitions/Translations"
+            },
+            "download": {
+              "$ref": "#/definitions/Translations"
+            },
+            "dateTextValid": {
+              "$ref": "#/definitions/Translations"
+            },
+            "dateTextExpired": {
+              "$ref": "#/definitions/Translations"
+            },
+            "documentsStatusType": {
+              "type": "object",
+              "properties": {
+                "ok": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "expired": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "expiredDue": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "expiredRed": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "expiredAmber": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "pending": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": [
+                "ok",
+                "expired",
+                "expiredDue",
+                "expiredRed",
+                "expiredAmber",
+                "pending"
+              ]
+            },
+            "documentsStatusUi2": {
+              "type": "object",
+              "properties": {
+                "statusSubmitted": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "statusApproved": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "statusPublished": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "multipleComments": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": [
+                "statusSubmitted",
+                "statusApproved",
+                "statusPublished",
+                "multipleComments"
+              ]
+            },
+            "shortQuestionId": {
+              "$ref": "#/definitions/Translations"
+            },
+            "documentsStatusTooltipExpiredAmber": {
+              "$ref": "#/definitions/Translations"
+            },
+            "documentsStatusTooltipExpiredRed": {
+              "$ref": "#/definitions/Translations"
+            },
+            "previous": {
+              "$ref": "#/definitions/Translations"
+            },
+            "uploaded": {
+              "$ref": "#/definitions/Translations"
+            },
+            "overviewNextSteps": {
+              "type": "object",
+              "properties": {
+                "StartDocumentUpdate": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "description": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "buttonLabel": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "buttonSubText": {
+                      "$ref": "#/definitions/Translations"
+                    }
+                  },
+                  "required": [
+                    "title",
+                    "description",
+                    "buttonLabel",
+                    "buttonSubText"
+                  ]
+                },
+                "SubmitDocumentUpdate": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "description": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "buttonLabel": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "buttonSubText": {
+                      "$ref": "#/definitions/Translations"
+                    }
+                  },
+                  "required": [
+                    "title",
+                    "description",
+                    "buttonLabel",
+                    "buttonSubText"
+                  ]
+                },
+                "HelliosValidatingDocumentUpdate": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "description": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "buttonLabel": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "buttonSubText": {
+                      "$ref": "#/definitions/Translations"
+                    }
+                  },
+                  "required": [
+                    "title",
+                    "description",
+                    "buttonLabel",
+                    "buttonSubText"
+                  ]
+                },
+                "SupplierValidatingDocumentUpdate": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "description": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "buttonLabel": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "buttonSubText": {
+                      "$ref": "#/definitions/Translations"
+                    }
+                  },
+                  "required": [
+                    "title",
+                    "description",
+                    "buttonLabel",
+                    "buttonSubText"
+                  ]
+                },
+                "NotAllowedRenewalStarted": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "description": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "buttonLabel": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "buttonSubText": {
+                      "$ref": "#/definitions/Translations"
+                    }
+                  },
+                  "required": [
+                    "title",
+                    "description",
+                    "buttonLabel",
+                    "buttonSubText"
+                  ]
+                },
+                "NotAllowedInvitedRenewal": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "description": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "buttonLabel": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "buttonSubText": {
+                      "$ref": "#/definitions/Translations"
+                    }
+                  },
+                  "required": [
+                    "title",
+                    "description",
+                    "buttonLabel",
+                    "buttonSubText"
+                  ]
+                },
+                "NotAllowedQuestionnaireUpdateStarted": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "description": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "buttonLabel": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "buttonSubText": {
+                      "$ref": "#/definitions/Translations"
+                    }
+                  },
+                  "required": [
+                    "title",
+                    "description",
+                    "buttonLabel",
+                    "buttonSubText"
+                  ]
+                },
+                "NotAllowedQuestionnaireUpdateInValidation": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "description": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "buttonLabel": {
+                      "$ref": "#/definitions/Translations"
+                    },
+                    "buttonSubText": {
+                      "$ref": "#/definitions/Translations"
+                    }
+                  },
+                  "required": [
+                    "title",
+                    "description",
+                    "buttonLabel",
+                    "buttonSubText"
+                  ]
+                }
+              },
+              "required": [
+                "StartDocumentUpdate",
+                "SubmitDocumentUpdate",
+                "HelliosValidatingDocumentUpdate",
+                "SupplierValidatingDocumentUpdate",
+                "NotAllowedRenewalStarted",
+                "NotAllowedInvitedRenewal",
+                "NotAllowedQuestionnaireUpdateStarted",
+                "NotAllowedQuestionnaireUpdateInValidation"
+              ]
+            },
+            "updateDocumentsConfirmationModalContent": {
+              "$ref": "#/definitions/Translations"
+            },
+            "submitDocumentUpdateModal": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "subTitle": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "contentTitle": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "contentSubTitle": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": [
+                "title",
+                "subTitle",
+                "contentTitle",
+                "contentSubTitle"
+              ]
+            }
+          },
+          "required": [
+            "noData",
+            "noDataUi2",
+            "title",
+            "titleUi2",
+            "documentName",
+            "status",
+            "expiryDate",
+            "download",
+            "dateTextValid",
+            "dateTextExpired",
+            "documentsStatusType",
+            "documentsStatusUi2",
+            "shortQuestionId",
+            "documentsStatusTooltipExpiredAmber",
+            "documentsStatusTooltipExpiredRed",
+            "previous",
+            "uploaded",
+            "overviewNextSteps",
+            "updateDocumentsConfirmationModalContent",
+            "submitDocumentUpdateModal"
+          ]
+        }
+      },
+      "required": [
+        "welcomeMessage",
+        "viewAll",
+        "less",
+        "communityUpdatesUi2",
+        "statusCard",
+        "overallStatus",
+        "stageSummaryTable",
+        "documentsManagement"
+      ]
+    },
+    "countDownClock": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/Translations"
+        },
+        "days": {
+          "$ref": "#/definitions/Translations"
+        },
+        "hours": {
+          "$ref": "#/definitions/Translations"
+        },
+        "minutes": {
+          "$ref": "#/definitions/Translations"
+        },
+        "seconds": {
+          "$ref": "#/definitions/Translations"
+        }
+      },
+      "required": ["title", "days", "hours", "minutes", "seconds"]
+    },
+    "helpBanner": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/Translations"
+        },
+        "text": {
+          "type": "object",
+          "properties": {
+            "textBefore": {
+              "$ref": "#/definitions/Translations"
+            },
+            "textLink": {
+              "$ref": "#/definitions/Translations"
+            },
+            "textAfter": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": ["textBefore", "textLink", "textAfter"]
+        },
+        "icon": {
+          "$ref": "#/definitions/Translations"
+        }
+      },
+      "required": ["title", "text", "icon"]
+    },
+    "progressBanner": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/Translations"
+        },
+        "description": {
+          "type": "object",
+          "properties": {
+            "stage": {
+              "$ref": "#/definitions/Translations"
+            },
+            "recommendation": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": ["stage", "recommendation"]
+        },
+        "stage": {
+          "type": "object",
+          "properties": {
+            "none": {
+              "$ref": "#/definitions/Translations"
+            },
+            "invited": {
+              "$ref": "#/definitions/Translations"
+            },
+            "stage1": {
+              "$ref": "#/definitions/Translations"
+            },
+            "stage2": {
+              "$ref": "#/definitions/Translations"
+            },
+            "lastStage": {
+              "$ref": "#/definitions/Translations"
+            },
+            "complete": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": [
+            "none",
+            "invited",
+            "stage1",
+            "stage2",
+            "lastStage",
+            "complete"
+          ]
+        },
+        "action": {
+          "type": "object",
+          "properties": {
+            "questionnaire": {
+              "$ref": "#/definitions/Translations"
+            },
+            "review": {
+              "$ref": "#/definitions/Translations"
+            },
+            "renew": {
+              "$ref": "#/definitions/Translations"
+            },
+            "documents": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": ["questionnaire", "review", "renew", "documents"]
+        }
+      },
+      "required": ["title", "description", "stage", "action"]
+    },
+    "payment": {
+      "type": "object",
+      "properties": {
+        "billing": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "$ref": "#/definitions/Translations"
+            },
+            "contactTitle": {
+              "$ref": "#/definitions/Translations"
+            },
+            "surname": {
+              "$ref": "#/definitions/Translations"
+            },
+            "firstName": {
+              "$ref": "#/definitions/Translations"
+            },
+            "addressTitle": {
+              "$ref": "#/definitions/Translations"
+            },
+            "addressDescription": {
+              "$ref": "#/definitions/Translations"
+            },
+            "address1": {
+              "$ref": "#/definitions/Translations"
+            },
+            "address2": {
+              "$ref": "#/definitions/Translations"
+            },
+            "city": {
+              "$ref": "#/definitions/Translations"
+            },
+            "postCode": {
+              "$ref": "#/definitions/Translations"
+            },
+            "country": {
+              "$ref": "#/definitions/Translations"
+            },
+            "state": {
+              "$ref": "#/definitions/Translations"
+            },
+            "phone": {
+              "$ref": "#/definitions/Translations"
+            },
+            "link": {
+              "$ref": "#/definitions/Translations"
+            },
+            "paymentNotRequired": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": [
+            "title",
+            "contactTitle",
+            "surname",
+            "firstName",
+            "addressTitle",
+            "addressDescription",
+            "address1",
+            "address2",
+            "city",
+            "postCode",
+            "country",
+            "state",
+            "phone",
+            "link",
+            "paymentNotRequired"
+          ]
+        },
+        "error": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "$ref": "#/definitions/Translations"
+            },
+            "description": {
+              "$ref": "#/definitions/Translations"
+            },
+            "linkPayHere": {
+              "$ref": "#/definitions/Translations"
+            },
+            "differentPayment": {
+              "$ref": "#/definitions/Translations"
+            },
+            "link": {
+              "$ref": "#/definitions/Translations"
+            },
+            "maxLength": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": [
+            "title",
+            "description",
+            "linkPayHere",
+            "differentPayment",
+            "link",
+            "maxLength"
+          ]
+        },
+        "success": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "$ref": "#/definitions/Translations"
+            },
+            "description": {
+              "$ref": "#/definitions/Translations"
+            },
+            "questionnaireInfo": {
+              "$ref": "#/definitions/Translations"
+            },
+            "dashboardLink": {
+              "$ref": "#/definitions/Translations"
+            },
+            "questionnaireLink": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": [
+            "title",
+            "description",
+            "questionnaireInfo",
+            "dashboardLink",
+            "questionnaireLink"
+          ]
+        }
+      },
+      "required": ["billing", "error", "success"]
+    },
+    "profile": {
+      "type": "object",
+      "properties": {
+        "logo": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "$ref": "#/definitions/Translations"
+            },
+            "description": {
+              "$ref": "#/definitions/Translations"
+            },
+            "requirements": {
+              "$ref": "#/definitions/Translations"
+            },
+            "descriptionReq1": {
+              "$ref": "#/definitions/Translations"
+            },
+            "descriptionReq2": {
+              "$ref": "#/definitions/Translations"
+            },
+            "upload": {
+              "$ref": "#/definitions/Translations"
+            },
+            "remove": {
+              "$ref": "#/definitions/Translations"
+            },
+            "close": {
+              "$ref": "#/definitions/Translations"
+            },
+            "save": {
+              "$ref": "#/definitions/Translations"
+            },
+            "errorSize": {
+              "$ref": "#/definitions/Translations"
+            },
+            "errorFormat": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": [
+            "title",
+            "description",
+            "requirements",
+            "descriptionReq1",
+            "descriptionReq2",
+            "upload",
+            "remove",
+            "close",
+            "save",
+            "errorSize",
+            "errorFormat"
+          ]
+        },
+        "page": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "$ref": "#/definitions/Translations"
+            },
+            "titleUi2": {
+              "$ref": "#/definitions/Translations"
+            },
+            "save": {
+              "$ref": "#/definitions/Translations"
+            },
+            "saveUi2": {
+              "$ref": "#/definitions/Translations"
+            },
+            "cancel": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": ["title", "titleUi2", "save", "saveUi2", "cancel"]
+        },
+        "contentIsOptional": {
+          "$ref": "#/definitions/Translations"
+        },
+        "contentIsOptionalUi2": {
+          "$ref": "#/definitions/Translations"
+        },
+        "personalInfoTitle": {
+          "$ref": "#/definitions/Translations"
+        },
+        "personalInfoTitleUi2": {
+          "$ref": "#/definitions/Translations"
+        },
+        "contactInfoTitle": {
+          "$ref": "#/definitions/Translations"
+        },
+        "contactInfoTitleUi2": {
+          "$ref": "#/definitions/Translations"
+        },
+        "contact": {
+          "type": "object",
+          "properties": {
+            "firstName": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label"]
+            },
+            "lastName": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label"]
+            },
+            "jobTitle": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label"]
+            },
+            "emailAddress": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "error": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label", "error"]
+            },
+            "phoneWork": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label"]
+            },
+            "phoneMobile": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label"]
+            }
+          },
+          "required": [
+            "firstName",
+            "lastName",
+            "jobTitle",
+            "emailAddress",
+            "phoneWork",
+            "phoneMobile"
+          ]
+        },
+        "contactUi2": {
+          "type": "object",
+          "properties": {
+            "firstName": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label"]
+            },
+            "lastName": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label"]
+            },
+            "jobTitle": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label"]
+            },
+            "emailAddress": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "error": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label", "error"]
+            },
+            "phoneWork": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label"]
+            },
+            "phoneMobile": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label"]
+            }
+          },
+          "required": [
+            "firstName",
+            "lastName",
+            "jobTitle",
+            "emailAddress",
+            "phoneWork",
+            "phoneMobile"
+          ]
+        }
+      },
+      "required": [
+        "logo",
+        "page",
+        "contentIsOptional",
+        "contentIsOptionalUi2",
+        "personalInfoTitle",
+        "personalInfoTitleUi2",
+        "contactInfoTitle",
+        "contactInfoTitleUi2",
+        "contact",
+        "contactUi2"
+      ]
+    },
+    "user-management": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/Translations"
+        },
+        "titleUi2": {
+          "$ref": "#/definitions/Translations"
+        },
+        "description": {
+          "$ref": "#/definitions/Translations"
+        },
+        "buyersLink": {
+          "$ref": "#/definitions/Translations"
+        },
+        "suppliersLink": {
+          "$ref": "#/definitions/Translations"
+        },
+        "add-label": {
+          "$ref": "#/definitions/Translations"
+        },
+        "addLabelUi2": {
+          "$ref": "#/definitions/Translations"
+        },
+        "add-confirmation-title": {
+          "$ref": "#/definitions/Translations"
+        },
+        "edit-confirmation-title": {
+          "$ref": "#/definitions/Translations"
+        },
+        "delete-confirmation-title": {
+          "$ref": "#/definitions/Translations"
+        },
+        "add-confirmation": {
+          "$ref": "#/definitions/Translations"
+        },
+        "edit-confirmation": {
+          "$ref": "#/definitions/Translations"
+        },
+        "delete-confirmation": {
+          "$ref": "#/definitions/Translations"
+        },
+        "lose-rights-confirmation": {
+          "$ref": "#/definitions/Translations"
+        },
+        "modal": {
+          "type": "object",
+          "properties": {
+            "add-title": {
+              "$ref": "#/definitions/Translations"
+            },
+            "add-button-label": {
+              "$ref": "#/definitions/Translations"
+            },
+            "edit-title": {
+              "$ref": "#/definitions/Translations"
+            },
+            "edit-button-label": {
+              "$ref": "#/definitions/Translations"
+            },
+            "delete-title": {
+              "$ref": "#/definitions/Translations"
+            },
+            "delete-content": {
+              "$ref": "#/definitions/Translations"
+            },
+            "delete-button-label": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": [
+            "add-title",
+            "add-button-label",
+            "edit-title",
+            "edit-button-label",
+            "delete-title",
+            "delete-content",
+            "delete-button-label"
+          ]
+        },
+        "modalUi2": {
+          "type": "object",
+          "properties": {
+            "add-title": {
+              "$ref": "#/definitions/Translations"
+            },
+            "add-button-label": {
+              "$ref": "#/definitions/Translations"
+            },
+            "edit-title": {
+              "$ref": "#/definitions/Translations"
+            },
+            "edit-button-label": {
+              "$ref": "#/definitions/Translations"
+            },
+            "delete-title": {
+              "$ref": "#/definitions/Translations"
+            },
+            "delete-content": {
+              "$ref": "#/definitions/Translations"
+            },
+            "delete-button-label": {
+              "$ref": "#/definitions/Translations"
+            },
+            "warning": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": [
+            "add-title",
+            "add-button-label",
+            "edit-title",
+            "edit-button-label",
+            "delete-title",
+            "delete-content",
+            "delete-button-label",
+            "warning"
+          ]
+        },
+        "roles": {
+          "type": "object",
+          "properties": {
+            "standard": {
+              "$ref": "#/definitions/Translations"
+            },
+            "admin": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": ["standard", "admin"]
+        },
+        "contact": {
+          "type": "object",
+          "properties": {
+            "firstName": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label"]
+            },
+            "lastName": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label"]
+            },
+            "jobTitle": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label"]
+            },
+            "emailAddress": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "error": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label", "error"]
+            },
+            "phoneWork": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label"]
+            },
+            "phoneMobile": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label"]
+            },
+            "admin": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "description": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label", "description"]
+            }
+          },
+          "required": [
+            "firstName",
+            "lastName",
+            "jobTitle",
+            "emailAddress",
+            "phoneWork",
+            "phoneMobile",
+            "admin"
+          ]
+        },
+        "contactUi2": {
+          "type": "object",
+          "properties": {
+            "firstName": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label"]
+            },
+            "lastName": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label"]
+            },
+            "jobTitle": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label"]
+            },
+            "emailAddress": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "error": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label", "error"]
+            },
+            "phoneWork": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label"]
+            },
+            "phoneMobile": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label"]
+            },
+            "admin": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "$ref": "#/definitions/Translations"
+                },
+                "description": {
+                  "$ref": "#/definitions/Translations"
+                }
+              },
+              "required": ["label", "description"]
+            }
+          },
+          "required": [
+            "firstName",
+            "lastName",
+            "jobTitle",
+            "emailAddress",
+            "phoneWork",
+            "phoneMobile",
+            "admin"
+          ]
+        },
+        "contact-table": {
+          "type": "object",
+          "properties": {
+            "firstName": {
+              "$ref": "#/definitions/Translations"
+            },
+            "lastName": {
+              "$ref": "#/definitions/Translations"
+            },
+            "email": {
+              "$ref": "#/definitions/Translations"
+            },
+            "jobTitle": {
+              "$ref": "#/definitions/Translations"
+            },
+            "role": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": ["firstName", "lastName", "email", "jobTitle", "role"]
+        },
+        "contact-tableUi2": {
+          "type": "object",
+          "properties": {
+            "firstName": {
+              "$ref": "#/definitions/Translations"
+            },
+            "lastName": {
+              "$ref": "#/definitions/Translations"
+            },
+            "email": {
+              "$ref": "#/definitions/Translations"
+            },
+            "jobTitle": {
+              "$ref": "#/definitions/Translations"
+            },
+            "role": {
+              "$ref": "#/definitions/Translations"
+            },
+            "edit": {
+              "$ref": "#/definitions/Translations"
+            },
+            "delete": {
+              "$ref": "#/definitions/Translations"
+            }
+          },
+          "required": [
+            "firstName",
+            "lastName",
+            "email",
+            "jobTitle",
+            "role",
+            "edit",
+            "delete"
+          ]
+        }
+      },
+      "required": [
+        "title",
+        "titleUi2",
+        "description",
+        "buyersLink",
+        "suppliersLink",
+        "add-label",
+        "addLabelUi2",
+        "add-confirmation-title",
+        "edit-confirmation-title",
+        "delete-confirmation-title",
+        "add-confirmation",
+        "edit-confirmation",
+        "delete-confirmation",
+        "lose-rights-confirmation",
+        "modal",
+        "modalUi2",
+        "roles",
+        "contact",
+        "contactUi2",
+        "contact-table",
+        "contact-tableUi2"
+      ]
+    },
+    "passwordChange": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "$ref": "#/definitions/Translations"
+        },
+        "fallback": {
+          "$ref": "#/definitions/Translations"
+        }
+      },
+      "required": ["message", "fallback"]
+    }
+  },
+  "required": [
+    "common",
+    "sidebarTooltips",
+    "navbarTooltips",
+    "controls",
+    "questionnaire",
+    "modals",
+    "serverErrors",
+    "dashboard",
+    "countDownClock",
+    "helpBanner",
+    "progressBanner",
+    "payment",
+    "profile",
+    "user-management",
+    "passwordChange"
+  ]
+}
